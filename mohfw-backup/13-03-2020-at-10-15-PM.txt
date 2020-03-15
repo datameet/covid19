@@ -1,0 +1,18 @@
+(including foreign nationals, as on 13.03.2020 at 10:15 PM)
+
+State/UT wise list of COVID confirmed cases.
+S. No. 	Name of State / UT 	Total Confirmed cases (Indian National) 	Total Confirmed cases ( Foreign National ) 	Cured/Discharged 	Death
+1 	Delhi 	7 	0 	1 	1
+2 	Haryana 	0 	14 	0 	0
+3 	Kerala 	19 	0 	3 	0
+4 	Rajasthan 	1 	2 	1 	0
+5 	Telengana 	1 	0 	0 	0
+6 	Uttar Pradesh 	10 	1 	5 	0
+7 	Union Territory of Ladakh 	3 	0 	0 	0
+8 	Tamil Nadu 	1 	0 	0 	0
+9 	Union Territory of Jammu and Kashmir 	1 	0 	0 	0
+10 	Punjab 	1 	0 	0 	0
+11 	Karnataka 	6 	0 	0 	1
+12 	Maharashtra 	14 	0 	0 	0
+13 	Andhra Pradesh 	1 	0 	0 	0
+Total number of confirmed cases in India 	65 	17 	10 	2

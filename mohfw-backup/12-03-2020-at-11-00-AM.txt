@@ -1,0 +1,14 @@
+S. No. 	Name of State / UT 	Total Confirmed cases (Indian National) 	Total Confirmed cases ( Foreign National )
+1 	Delhi 	6 	0
+2 	Haryana 	0 	14
+3 	Kerala 	17 	0
+4 	Rajasthan 	1 	2
+5 	Telengana 	1 	0
+6 	Uttar Pradesh 	10 	1
+7 	Union Territory of Ladakh 	3 	0
+8 	Tamil Nadu 	1 	0
+9 	Union Territory of Jammu and Kashmir 	1 	0
+10 	Punjab 	1 	0
+11 	Karnataka 	4 	0
+12 	Maharashtra 	11 	0
+Total number of confirmed cases in India 	56 	17
