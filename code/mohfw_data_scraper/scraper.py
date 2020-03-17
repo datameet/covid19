@@ -22,7 +22,7 @@ pushover_api_token =str(os.environ.get("pushover_api_token"))
 pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
-archive_folder_path = "../mohfw-backup/{0}"
+archive_folder_path = str(os.environ.get("archive_folder_path")) 
 
 states = {}
 states["Andhra Pradesh"]="AP"
