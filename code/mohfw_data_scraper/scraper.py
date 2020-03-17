@@ -117,7 +117,11 @@ def sendMessage(title, message):
 	myobj["user"] = pushover_user_key
 	myobj["token"] = pushover_api_token
 	myobj["message"] = message
-	x = requests.post(pushover_url, data = myobj)
+	try:
+		x = requests.post(pushover_url, data = myobj)
+	except:
+		print(pushover_url)
+		print("ERROR IN SENDING MESSAGE TO PUSHOVER")
 
 def scrape_now():
 	title = "Started"
@@ -159,11 +163,11 @@ def scrape_now():
 
 	#get to parsing
 	soup = BeautifulSoup(txt, 'html.parser')
-	tables = soup.find_all('table')
+	tables = soup.find_all('tbody')
 	if len(tables) > 0:
 		table = tables[0]
 		#print(table)
-		first_row = True
+		first_row = False
 		for tr in list(table.children):
 			if isinstance(tr, bs4.element.Tag): 
 				if first_row:
