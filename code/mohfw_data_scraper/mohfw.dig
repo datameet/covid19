@@ -1,0 +1,15 @@
+timezone: UTC
+
+schedule:
+  hourly>: 30:00
+
+_export:
+  py: 
+    python: /root/.virtualenvs/scraper/bin/python
+
++mohfw_data_pull:
+  py>: scraper.scrape_now
+  _env:
+    pushover_api_token: ${secret:pushover_api_token}
+    pushover_user_key: ${secret:pushover_user_key}
+    covid_db_full_url: ${secret:covid_db_full_url}
