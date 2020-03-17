@@ -6,6 +6,18 @@ import bs4
 from bs4 import BeautifulSoup
 import couchdb
 
+# I scripted this in urgency, So code quality or the logic isn't great.
+# This is mostly a hack. 
+
+# To RUN
+# Clone the project
+# Set up a virual environment 
+# Install everything in requirements
+# setup pushover_api_token, pushover_user_key and covid_db_full_url in env
+# needs couchdb
+# run this by calling `python3 scraper.py`
+# You can also schedule it using the digdag
+
 pushover_api_token =str(os.environ.get("pushover_api_token"))
 pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
@@ -60,7 +72,7 @@ def getFileName(t):
 	t = t+".html"
 	return t
 
-# This is not great way of doing. This is just a hack
+# This is not a great way of doing this. This is just a hack
 # I foculd have used standard date formatter!! 
 def getFormattedDate(t):
 	x = t.replace("as on ","", 1)
