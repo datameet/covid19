@@ -1,0 +1,3 @@
+requests
+couchdb
+bs4
