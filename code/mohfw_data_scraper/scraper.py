@@ -23,6 +23,7 @@ pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
+force_run = False
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -151,8 +152,12 @@ def scrape_now():
 	if path.exists(full_file_name):
 		message = message +  " FILE EXISTS NOTHING TO BE DONE \n"
 		print("FILE Exists and nothing to be done")
-		sendMessage(title, message)
-		return 0
+		if(force_run):
+			with open(full_file_name, "r") as f:
+				txt = str(f.read())
+		else:
+			sendMessage(title, message)
+			return 0
 	else:
 		#Backup first
 		message = message +  " WRITING THE FILE \n"
