@@ -62,7 +62,7 @@ states["Delhi"]="DL"
 states["Jammu and Kashmir"]="JK"
 states["Ladakh"]="LA"
 states["Lakshadweep"]="LD"
-states["Puducherry"]="PY"
+states["Pondicherry"]="PY"
 
 
 def getFileName(t):
