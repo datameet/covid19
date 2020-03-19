@@ -1,1 +1,1 @@
-digdag push mohfw_data_scraper --project ./mohfw_data_scraper --revision v4
+digdag push mohfw_data_scraper --project ./mohfw_data_scraper --revision v6
