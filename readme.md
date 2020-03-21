@@ -9,7 +9,7 @@ We backup the HTMLs as and when it gets published. You can find them inside [moh
 
 ## Parsed Data
 
-Parsed data in the form of JSON is availabe inside [data](https://github.com/datameet/covid19/tree/master/mohfw-backup). We update once a day. It has historical data since 2020-03-12T11:00:00.00+05:30
+Parsed data in the form of JSON is availabe inside [data](https://github.com/datameet/covid19/tree/master/data). We update once a day. It has historical data since 2020-03-12T11:00:00.00+05:30
 
 There is one record for each state and report_time combination.
 
