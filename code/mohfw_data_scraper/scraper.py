@@ -31,6 +31,7 @@ states["Arunachal Pradesh"]="AR"
 states["Assam"]="AS"
 states["Bihar"]="BR"
 states["Chattisgarh"]="CT"
+states["Chhattisgarh"]="CT"
 states["Goa"]="GA"
 states["Gujarat"]="GJ"
 states["Haryana"]="HR"
@@ -63,6 +64,8 @@ states["Jammu and Kashmir"]="JK"
 states["Ladakh"]="LA"
 states["Lakshadweep"]="LD"
 states["Pondicherry"]="PY"
+states["Puducherry"]="PY"
+
 
 
 def getFileName(t):
