@@ -6,7 +6,7 @@ Project by Datameet.
 
 Community collected, cleaned and organized COVID-19 datasets about India sourced from different government websites which are freely available to all the Indians. Here we have digitized them, cleaned them, added appropriate attributes so it can be used by all the researchers, reporters students etc.:
 
--  [CONTRIBUTING](./contributing) for ways to contribute.
+-  [CONTRIBUTING](./contributing) for ways to contribute or go to [Github](http://github.com/datameet/covid19) page.
 -  [REFERENCE ](./reference) for the reference links, other similar projects or links to visuals, articles etc
 -  [TOOLS](./tools) for the tols that you can use
 

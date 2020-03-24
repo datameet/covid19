@@ -1,5 +1,7 @@
 # Contributing - COVID-19 India Data by DataMeet
 
+Project is on [Github](http://github.com/datameet/covid19).
+
 We are open to contributions. Please read [DataMeet Community Code of Conduct](http://datameet.org/wiki/guidelines:datameet-community-code-of-conduct) before you start and also read our [license to familiarize yourself with ODBl](http://opendatacommons.org/licenses/odbl) under which all our and your contributions will be distributed.
 
 ## Referencing the Source
