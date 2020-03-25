@@ -10,6 +10,7 @@ folder also has a note that can be reffered.
 
 
 ## Similar Projects
+- [The Hindu - COVID19 Dataset](https://github.com/anandology/covid19) by @anandology
 
 
 ## Visuals
