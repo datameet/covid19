@@ -14,11 +14,12 @@ Before using this data, please note the following:
 ## DataMeet Discussions 
 You can follow and participate in discussions at [DataMeet](https://groups.google.com/forum/#!topic/datameet/_HnOB5iyEx0)
 
-## HTML Archive
+## Cases By state
+### HTML Archive
 
 We backup the HTMLs as and when it gets published. You can find them inside [mohfw-backup](https://github.com/datameet/covid19/tree/master/mohfw-backup) folder.
 
-## Parsed Data
+### Parsed Data
 
 Parsed data in the form of JSON is availabe inside [data](https://github.com/datameet/covid19/tree/master/mohfw-backup). We update once a day. It has historical data since 2020-03-12T11:00:00.00+05:30
 
@@ -40,9 +41,16 @@ There is one record for each state and report_time combination.
 }
 ```
 
-## API
-
+### API
 Send an email to thej@datameet.org to get access to API.
+
+
+
+## Cases By state
+### PDF Archive
+We backup the pdfs as and when it gets published. You can find them inside [mohfw-backup](https://github.com/datameet/covid19/tree/master/mohfw-backup) folder.
+
+
 
 
 ## Projects Using this dataset
