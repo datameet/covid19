@@ -44,6 +44,40 @@
 
 {"key":["2020-03-19T17:00:00.00+05:30","total_confirmed"],"value":173},
 
+<<<<<<< HEAD
 {"key":["2020-03-20T09:00:00.00+05:30","total_confirmed"],"value":195}
+=======
+{"key":["2020-03-20T09:00:00.00+05:30","total_confirmed"],"value":195},
+
+{"key":["2020-03-20T17:00:00.00+05:30","total_confirmed"],"value":223},
+
+{"key":["2020-03-21T09:00:00.00+05:30","total_confirmed"],"value":258},
+
+{"key":["2020-03-21T16:45:00.00+05:30","total_confirmed"],"value":283},
+
+{"key":["2020-03-22T09:45:00.00+05:30","total_confirmed"],"value":324},
+
+{"key":["2020-03-22T11:45:00.00+05:30","total_confirmed"],"value":324},
+
+{"key":["2020-03-22T18:30:00.00+05:30","total_confirmed"],"value":360},
+
+{"key":["2020-03-23T09:00:00.00+05:30","total_confirmed"],"value":390},
+
+{"key":["2020-03-23T10:30:00.00+05:30","total_confirmed"],"value":390},
+
+{"key":["2020-03-23T18:00:00.00+05:30","total_confirmed"],"value":433},
+
+{"key":["2020-03-23T20:15:00.00+05:30","total_confirmed"],"value":434},
+
+{"key":["2020-03-24T08:45:00.00+05:30","total_confirmed"],"value":492},
+
+{"key":["2020-03-24T17:45:00.00+05:30","total_confirmed"],"value":519},
+
+{"key":["2020-03-24T20:15:00.00+05:30","total_confirmed"],"value":519},
+
+{"key":["2020-03-25T09:15:00.00+05:30","total_confirmed"],"value":562},
+
+{"key":["2020-03-25T18:45:00.00+05:30","total_confirmed"],"value":606}
+>>>>>>> a001384d5385d4e8559cb64a9200ebc3809b8c01
 
 ]}
