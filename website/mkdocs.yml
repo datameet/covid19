@@ -1,0 +1,17 @@
+site_name: COVID-19 India Data by DataMeet
+site_description: A project website for COVID-19 related data from India
+theme:
+    name: null
+    custom_dir: 'cinder'
+nav:
+    - Home: index.md
+    - Contributing: contributing.md
+    - Reference: reference.md
+    - Tools: tools.md
+site_dir: './../docs'
+# extra_css:
+#     - 'bower_components/leaflet/dist/leaflet.css'
+# extra_javascript:
+#     - 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.0/d3.min.js'
+#     - 'bower_components/leaflet/dist/leaflet.js'
+#     - 'js/mapsplot.js'
