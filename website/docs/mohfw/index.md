@@ -45,8 +45,10 @@ There is one record for each state and report_time combination.
 Send an email to thej@datameet.org to get access to API.
 
 
-## Usage
-1. [COVID19 Cases In India - Graph](https://thejeshgn.com/projects/covid19-india/)
+## Projects Using this dataset
+1. [COVID19 Cases In India - Graph](https://thejeshgn.com/projects/covid19-india/) by Thejesh GN
+2. [State-wise COVID-19 cases](https://public.flourish.studio/visualisation/1661567/) by Rajesvari Parasa 
+3. [COVID-19 India Report](https://datastudio.google.com/embed/u/0/reporting/12M_3KUQF1TowcyXyu5qbpiSv-freYUzw/page/8reJB) by Siva Narayanan
 
 ## Credit
 Please credit DataMeet if you use this data.
