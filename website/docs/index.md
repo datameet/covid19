@@ -17,6 +17,9 @@ Community collected, cleaned and organized COVID-19 datasets about India sourced
 
 Publishes the latest state level cases data. We have archived the data so we can get time series. More [details are dataset are here](./mohfw/index.md)
 
+### [The Indian Council of Medical Research - ICMR](./icmr/index.md)
+
+Publishes the latest country level SARS-CoV-2 (COVID-19) testing status data. We have archived the data so we can get time series. More [details are dataset are here](./icmr/index.md)
 
 <hr>
 

@@ -36,7 +36,9 @@ There is one record for each state and report_time combination.
       "confirmed_india":6,
       "confirmed_foreign":0,
       "cured":0,
-      "death":0
+      "death":0,
+      "source":"mohfw",
+      "type":"cases"      
 	}
 }
 ```
