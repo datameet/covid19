@@ -217,6 +217,8 @@ def scrape_now():
 				data["confirmed_foreign"] = int( (tds[7]).get_text() )
 				data["cured"] = int( (tds[9]).get_text() )
 				data["death"] = int( (tds[11]).get_text() )
+				data["source"] ="mohfw"
+				data["type"] ="cases"
 
 				try:
 					if database[_id]:
