@@ -17,7 +17,7 @@ You can follow and participate in discussions at [DataMeet](https://groups.googl
 ## Tests At the Country
 ### PDF Archive
 
-We backup the PDFss as and when it gets published. You can find them inside [icmr](https://github.com/datameet/covid19/tree/master/icmr) folder.
+We backup the PDFss as and when it gets published. You can find them inside [icmr](https://github.com/datameet/covid19/tree/master/icmr-backup) folder.
 
 ### Parsed Data
 
