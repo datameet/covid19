@@ -1,4 +1,9 @@
 {"rows":[
+{"key":["2020-01-30T13:33:00.00+05:30","total_confirmed"],"value":1},
+{"key":["2020-02-02T10:39:00.00+05:30","total_confirmed"],"value":2},
+{"key":["2020-02-03T12:13:00.00+05:30","total_confirmed"],"value":3},
+{"key":["2020-03-02T14:28:00.00+05:30","total_confirmed"],"value":5},
+{"key":["2020-03-03T19:36:00.00+05:30","total_confirmed"],"value":6},
 {"key":["2020-03-10T12:00:00.00+05:30","total_confirmed"],"value":47},
 {"key":["2020-03-11T17:30:00.00+05:30","total_confirmed"],"value":60},
 {"key":["2020-03-12T11:00:00.00+05:30","total_confirmed"],"value":73},
@@ -39,5 +44,6 @@
 {"key":["2020-03-25T18:45:00.00+05:30","total_confirmed"],"value":606},
 {"key":["2020-03-26T10:15:00.00+05:30","total_confirmed"],"value":649},
 {"key":["2020-03-26T20:00:00.00+05:30","total_confirmed"],"value":694},
-{"key":["2020-03-27T09:15:00.00+05:30","total_confirmed"],"value":724}
+{"key":["2020-03-27T09:15:00.00+05:30","total_confirmed"],"value":724},
+{"key":["2020-03-28T09:30:00.00+05:30","total_confirmed"],"value":873}
 ]}
