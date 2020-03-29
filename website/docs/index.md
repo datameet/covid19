@@ -21,7 +21,7 @@ Publishes the latest state level cases data. We have archived the data so we can
 
 Publishes the latest country level SARS-CoV-2 (COVID-19) testing status data. We have archived the data so we can get time series. More [details are dataset are here](./icmr/index.md)
 
-## [Media Report based Non Virus Deaths](./non-virus-deaths/index.md)
+### [Media Report based Non Virus Deaths](./non-virus-deaths/index.md)
 
 There are many deaths (Suicide, due to lockdown, lathicharge, hunger ,during migration etc) reported from the field which are related to COVID-19 disease but are not attributed to virus. Community has collected them and organized them. 
 
