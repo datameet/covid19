@@ -1,12 +1,20 @@
 # Media Report based Non Virus Deaths 
 
-There are many deaths (Suicide, due to lockdown, lathicharge, hunger ,during migration etc) reported from the field which are related to COVID-19 disease but are not attributed to virus. Community has collected them and organized them. 
-
+There are many deaths (Suicide, due to lockdown, lathicharge, hunger ,during migration etc) reported from the field which are related to COVID-19 disease but are not attributed to virus. Community (see credits) has collected them and organized them. 
 
 Before using this data, please note the following:
  
  1. This is based on media reports
  2. We only archive, scrape and parse the data
+
+
+## Credits
+
+- [Kanika](https://twitter.com/_kanikas_)
+- [Aman](https://twitter.com/CB_Aman)
+- [Thejesh GN](https://thejeshgn.com)
+
+
 
 
 ## Submit
