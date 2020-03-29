@@ -138,8 +138,31 @@
 <h3 id="web-archive-of-media">Web Archive of media</h3>
 <p>Individual articles are archived automatically on archive.org. </p>
 <h3 id="parsed-data">Parsed Data</h3>
-<p>We will also make JSON availabe soon.</p>
-<p><code>in the process</code></p>
+<p>Expected format</p>
+<pre><code>{
+  &quot;id&quot;: &quot;2020-03-25|non_virus_deaths|17&quot;,
+  &quot;key&quot;: &quot;2020-03-25|non_virus_deaths|17&quot;,
+  &quot;value&quot;: {
+    &quot;_id&quot;: &quot;2020-03-25|non_virus_deaths|17&quot;,
+    &quot;_rev&quot;: &quot;3-3381b76df61bff8c3b28276a1cffad27&quot;,
+    &quot;type&quot;: &quot;non_virus_deaths&quot;,
+    &quot;location&quot;: &quot;Rasingapuram&quot;,
+    &quot;district&quot;: &quot;Theni&quot;,
+    &quot;state&quot;: &quot;KL&quot;,
+    &quot;incident_date&quot;: &quot;2020-03-24&quot;,
+    &quot;deaths&quot;: 4,
+    &quot;reason&quot;: [
+      &quot;Forest fire&quot;,
+      &quot;Roadblock&quot;
+    ],
+    &quot;source_date&quot;: &quot;2020-03-25&quot;,
+    &quot;source_link&quot;: &quot;https://www.thehindu.com/news/national/tamil-nadu/death-toll-rises-to-4-in-theni-forest-fire-tragedy/article31160605.ece and https://www.thenewsminute.com/article/3-women-and-one-year-old-child-die-theni-forest-fire-121088&quot;,
+    &quot;source&quot;: &quot;www.thehindu.com&quot;
+  }
+}
+</code></pre>
+
+<p>deaths : no of deaths reported in this incident/new report</p>
 <h3 id="api">API</h3>
 <p>Send an email to thej@datameet.org to get access to API.</p>
 <h2 id="projects-using-this-dataset">Projects Using this dataset</h2></div>

@@ -35,6 +35,7 @@ There is one record for each state and report_time combination.
       "report_time":"2020-03-12T11:00:00.00+05:30",
       "confirmed_india":6,
       "confirmed_foreign":0,
+      "confirmed": 6,
       "cured":0,
       "death":0,
       "source":"mohfw",
@@ -43,9 +44,11 @@ There is one record for each state and report_time combination.
 }
 ```
 
+`confirmed_india` and 'confirmed_foreign' are present only when they are availabe. Use `confirmed` which is usually the 
+`total_confirmed`
+
 ### API
 Send an email to thej@datameet.org to get access to API.
-
 
 
 ## Cases By state
