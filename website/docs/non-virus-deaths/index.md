@@ -6,7 +6,7 @@ There are many deaths (Suicide, due to lockdown, lathicharge, hunger ,during mig
 Before using this data, please note the following:
  
  1. This is based on media reports
- 2. We only arhive, scrape and parse the data
+ 2. We only archive, scrape and parse the data
 
 
 ## Submit
@@ -14,9 +14,7 @@ We have a google form where you can [submit the incidents](https://forms.gle/4Bk
 
 
 ## DataMeet Discussions 
-You can follow and participate in discussions at [DataMeet](https://groups.google.com/forum/#!topic/datameet/_HnOB5iyEx0)
-
-## Archive and Data
+You can follow and participate in discussions at [DataMeet](https://groups.google.com/forum/#!topic/datameet/vIsv3EgrX5s)
 
 
 ### Raw Data
@@ -27,7 +25,8 @@ Individual articles are archived automatically on archive.org.
 
 
 ### Parsed Data
- Expected format
+ Parsed data in the form of JSON is availabe inside [data](https://github.com/datameet/covid19/tree/master/data). We update once a day. It has data since 2020-03-25
+
 
 ```
 {
