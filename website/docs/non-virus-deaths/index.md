@@ -53,7 +53,7 @@ Individual articles are archived automatically on archive.org.
 }
 ```
 
-deaths : no of deaths reported in this incident/new report
+`deaths` : no of deaths reported in this specific incident report
 
 ### API
 Send an email to thej@datameet.org to get access to API.

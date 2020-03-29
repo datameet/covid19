@@ -44,8 +44,8 @@ There is one record for each state and report_time combination.
 }
 ```
 
-`confirmed_india` and `confirmed_foreign` are present only when they are availabe. Use `confirmed` which is same as 
-`total_confirmed`.
+`confirmed_india` and `confirmed_foreign` are present only when they are available. Use `confirmed` which is sum of
+`confirmed_india` and `confirmed_foreign`.
 
 ### API
 Send an email to thej@datameet.org to get access to API.
