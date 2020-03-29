@@ -23,7 +23,7 @@ pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
-force_run = False
+force_run = True
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -213,8 +213,9 @@ def scrape_now():
 				data["_id"] = _id
 				data["state"] = state_code
 				data["report_time"] = report_time
-				data["confirmed_india"] =  int( (tds[5]).get_text() )
-				data["confirmed_foreign"] = int( (tds[7]).get_text() )
+				data["confirmed"] =  int( (tds[5]).get_text() )
+				#data["confirmed_india"] =  int( (tds[5]).get_text() )
+				#data["confirmed_foreign"] = int( (tds[7]).get_text() )
 				data["cured"] = int( (tds[9]).get_text() )
 				data["death"] = int( (tds[11]).get_text() )
 				data["source"] ="mohfw"

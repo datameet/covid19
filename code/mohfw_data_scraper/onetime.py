@@ -32,7 +32,11 @@ database = couch[couchdb_db_name]
 for d in database:
 	if str(d).startswith("2020"):
 		data = database[d]
-		data["source"] = "mohfw"
-		data["type"] = "cases"
-		database.save(data)
-		print(dict(data))
+		if data["type"] == "cases":
+			if "confirmed" in data:
+				pass
+			else:
+				confirmed = data["confirmed_india"] + data["confirmed_foreign"]
+				data["confirmed"] = confirmed
+				database.save(data)
+				print(dict(data))
