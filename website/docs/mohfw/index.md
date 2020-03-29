@@ -59,6 +59,7 @@ We backup the pdfs as and when it gets published. You can find them inside [mohf
 1. [COVID19 Cases In India - Graph](https://thejeshgn.com/projects/covid19-india/) by Thejesh GN
 2. [State-wise COVID-19 cases](https://public.flourish.studio/visualisation/1661567/) by Rajesvari Parasa 
 3. [COVID-19 India Report](https://datastudio.google.com/embed/u/0/reporting/12M_3KUQF1TowcyXyu5qbpiSv-freYUzw/page/8reJB) by Siva Narayanan
+4. [COVID-19 BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWEyNThlZTItYTY3MC00NDM5LWEyYTgtZDBiMzc4MmNlNDdiIiwidCI6ImM4ZWNhM2NhLTEyNzYtNDZkNS05ZDlkLWEwZjJhMDI4OTIwZiIsImMiOjl9) by Anup Kumar Jana
 
 ## Credit
 Please credit DataMeet if you use this data.
