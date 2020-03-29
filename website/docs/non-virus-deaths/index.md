@@ -25,6 +25,8 @@ We have a google form where you can [submit the incidents](https://forms.gle/4Bk
 You can follow and participate in discussions at [DataMeet](https://groups.google.com/forum/#!topic/datameet/vIsv3EgrX5s)
 
 
+## Data
+
 ### Raw Data
 We have semi parsed data availabe as [CSV](https://github.com/datameet/covid19/tree/master/non-virus-deaths-media-reports-backup).
 
