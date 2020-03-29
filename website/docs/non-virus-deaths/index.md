@@ -27,10 +27,33 @@ Individual articles are archived automatically on archive.org.
 
 
 ### Parsed Data
-We will also make JSON availabe soon.
+ Expected format
 
-` in the process `
+```
+{
+  "id": "2020-03-25|non_virus_deaths|17",
+  "key": "2020-03-25|non_virus_deaths|17",
+  "value": {
+    "_id": "2020-03-25|non_virus_deaths|17",
+    "_rev": "3-3381b76df61bff8c3b28276a1cffad27",
+    "type": "non_virus_deaths",
+    "location": "Rasingapuram",
+    "district": "Theni",
+    "state": "KL",
+    "incident_date": "2020-03-24",
+    "deaths": 4,
+    "reason": [
+      "Forest fire",
+      "Roadblock"
+    ],
+    "source_date": "2020-03-25",
+    "source_link": "https://www.thehindu.com/news/national/tamil-nadu/death-toll-rises-to-4-in-theni-forest-fire-tragedy/article31160605.ece and https://www.thenewsminute.com/article/3-women-and-one-year-old-child-die-theni-forest-fire-121088",
+    "source": "www.thehindu.com"
+  }
+}
+```
 
+deaths : no of deaths reported in this incident/new report
 
 ### API
 Send an email to thej@datameet.org to get access to API.
