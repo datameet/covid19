@@ -23,7 +23,7 @@ pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
-force_run = True
+force_run = False
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -191,8 +191,8 @@ def scrape_now():
 				else:
 					continue
 
-				if "Total number of confirmed cases in India" == tds[1].get_text():
-					continue
+				if "Total number of" in str(tds[1].get_text()):
+					break
 
 
 				report_time = full_date_text
