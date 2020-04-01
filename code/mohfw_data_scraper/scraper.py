@@ -80,25 +80,29 @@ def getFileName(t):
 # This is not a great way of doing this. This is just a hack
 # I foculd have used standard date formatter!! 
 def getFormattedDate(t):
-	x = t.replace("as on ","", 1)
-	parts = x.split(" at ")
-
-	date_parts = (parts[0]).split(".")
+	x = t.replace("as on : ","", 1)
+	parts = x.split(", ")
+	print(parts)
+	date_parts = (parts[0]).split(" ")
 	day = date_parts[0]
 	if len(day) == 1:
 		day = "0"+day
 
-	month = date_parts[1]
-	if len(month) == 1:
-		month = "0"+month
 
-	year = date_parts[2]
+	# month = date_parts[1]
+	# if len(month) == 1:
+	# 	month = "0"+month
+	month = "04"
+
+	# year = date_parts[2]
+	year = "2020"
+
 	time_parts = (parts[1]).split(" ")
 	am_pm = time_parts[1]
 	hour = ((time_parts[0]).split(":"))[0]
 
-	if am_pm == "PM":
-		hour = str(int(hour)+12)
+	# if am_pm == "PM":
+	# 	hour = str(int(hour)+12)
 	if len(hour) == 1:
 		hour = "0"+hour
 
@@ -137,14 +141,14 @@ def scrape_now():
 
 	txt = getContents()
 
-	date_pattern = "as on \d\d.\d\d.2020 at \d\d:\d\d [A,P]M"
+	date_pattern = "as on : \d\d April 2020, \d\d:\d\d "
 	x = re.findall(date_pattern, txt)
 	extracted_date_text = x[0]
+	print(extracted_date_text)
 
 	full_date_text =  getFormattedDate(extracted_date_text)
-	full_file_name =  archive_folder_path.format(getFileName(extracted_date_text))
+	full_file_name =  archive_folder_path.format(getFileName(full_date_text))
 
-	print(extracted_date_text)
 	print(full_file_name)
 	print(full_date_text)
 
@@ -174,7 +178,7 @@ def scrape_now():
 	soup = BeautifulSoup(txt, 'html.parser')
 	tables = soup.find_all('tbody')
 	if len(tables) > 0:
-		table = tables[9]
+		table = tables[0]
 		#print(table)
 		first_row = False
 		for tr in list(table.children):
@@ -216,8 +220,8 @@ def scrape_now():
 				data["confirmed"] =  int( (tds[5]).get_text() )
 				#data["confirmed_india"] =  int( (tds[5]).get_text() )
 				#data["confirmed_foreign"] = int( (tds[7]).get_text() )
-				data["cured"] = int( (tds[9]).get_text() )
-				data["death"] = int( (tds[11]).get_text() )
+				data["cured"] = int( (tds[7]).get_text() )
+				data["death"] = int( (tds[9]).get_text() )
 				data["source"] ="mohfw"
 				data["type"] ="cases"
 
