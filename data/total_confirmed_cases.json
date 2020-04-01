@@ -50,5 +50,7 @@
 {"key":["2020-03-29T10:00:00.00+05:30","total_confirmed"],"value":979},
 {"key":["2020-03-29T19:30:00.00+05:30","total_confirmed"],"value":1024},
 {"key":["2020-03-30T10:30:00.00+05:30","total_confirmed"],"value":1071},
-{"key":["2020-03-30T21:30:00.00+05:30","total_confirmed"],"value":1205}
+{"key":["2020-03-30T21:30:00.00+05:30","total_confirmed"],"value":1205},
+{"key":["2020-03-31T20:30:00.00+05:30","total_confirmed"],"value":1359},
+{"key":["2020-04-01T09:00:00.00+05:30","total_confirmed"],"value":1637}
 ]}
