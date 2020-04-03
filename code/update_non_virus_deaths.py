@@ -46,6 +46,7 @@ states["Meghalaya"]="ML"
 states["Mizoram"]="MZ"
 states["Nagaland"]="NL"
 states["Odisha"]="OR"
+states["Orissa"]="OR"
 states["Punjab"]="PB"
 states["Rajasthan"]="RJ"
 states["Sikkim"]="SK"
@@ -70,7 +71,7 @@ states["Puducherry"]="PY"
 
 
 
-file_name = non_virus_archive_folder_path.format("non-virus-deaths_eod_30_march.tsv")
+file_name = non_virus_archive_folder_path.format("non-virus-deaths_3_apr.tsv")
 message = ""
 with open(file_name) as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='\t')
