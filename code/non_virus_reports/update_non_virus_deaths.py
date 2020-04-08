@@ -84,6 +84,7 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
+batch_to_process = "SET_APRIL800"
 message = ""
 with open(file_name) as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='\t')
@@ -94,6 +95,13 @@ with open(file_name) as csv_file:
                   pass
             else:
                   batch = row[0]
+
+                  if batch == batch_to_process:
+                        pass
+                  else:
+                        #anything else, skip
+                        continue
+
                   seq = row[1]
                   location = row[2]
                   district = row[3]
