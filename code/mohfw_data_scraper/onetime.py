@@ -38,5 +38,5 @@ for d in database:
 			else:
 				confirmed = data["confirmed_india"] + data["confirmed_foreign"]
 				data["confirmed"] = confirmed
-				database.save(data)
+				#database.save(data)
 				print(dict(data))
