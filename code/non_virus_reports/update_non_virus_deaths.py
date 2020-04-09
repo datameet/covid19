@@ -17,12 +17,12 @@ pushover_api_token =str(os.environ.get("pushover_api_token"))
 pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
-non_virus_archive_folder_path = "../non-virus-deaths-media-reports-backup/{0}"
+non_virus_archive_folder_path = "../../non-virus-deaths-media-reports-backup/{0}"
 force_run = False
 
 couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
-database = couch[couchdb_db_name]
+#database = couch[couchdb_db_name]
 
 
 states = {}
@@ -84,11 +84,12 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_APRIL800"
+batch_to_process = "SET_APRIL9"
 message = ""
 with open(file_name) as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='\t')
       line_count = 0
+      insert_rows = 0
       for row in csv_reader:            
             print("------------------------------------------------------------------------------")
             if line_count == 0 or line_count == 1:
@@ -96,7 +97,7 @@ with open(file_name) as csv_file:
             else:
                   batch = row[0]
 
-                  if batch == batch_to_process:
+                  if batch.strip() == batch_to_process:
                         pass
                   else:
                         #anything else, skip
@@ -141,7 +142,11 @@ with open(file_name) as csv_file:
                   data["source_link"] = source_link
                   parsed_uri = urlparse(source_link)
                   data["source"] = parsed_uri.netloc
+                  
+                  insert_rows = insert_rows + 1
+                  print("----------------------------------------------------------------------------{0}".format(insert_rows))
                   print(data)
+
 
 
 
