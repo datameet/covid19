@@ -23,7 +23,7 @@ pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
-force_run = False
+force_run = True
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -45,6 +45,7 @@ states["Manipur"]="MN"
 states["Meghalaya"]="ML"
 states["Mizoram"]="MZ"
 states["Nagaland"]="NL"
+states["Nagaland#"]="NL"
 states["Odisha"]="OR"
 states["Punjab"]="PB"
 states["Rajasthan"]="RJ"
@@ -65,6 +66,7 @@ states["Ladakh"]="LA"
 states["Lakshadweep"]="LD"
 states["Pondicherry"]="PY"
 states["Puducherry"]="PY"
+
 
 
 
