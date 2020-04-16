@@ -1,0 +1,298 @@
+[
+	{
+		"sno": "1",
+		"state_name": "Andhra Pradesh",
+		"positive": "534",
+		"cured": "20",
+		"death": "14",
+		"state_code": "28"
+	},
+	{
+		"sno": "2",
+		"state_name": "Andaman and Nicobar Islands",
+		"positive": "11",
+		"cured": "10",
+		"death": "0",
+		"state_code": "35"
+	},
+	{
+		"sno": "3",
+		"state_name": "Arunachal Pradesh",
+		"positive": "1",
+		"cured": "0",
+		"death": "0",
+		"state_code": "12"
+	},
+	{
+		"sno": "4",
+		"state_name": "Assam",
+		"positive": "33",
+		"cured": "5",
+		"death": "1",
+		"state_code": "18"
+	},
+	{
+		"sno": "5",
+		"state_name": "Bihar",
+		"positive": "74",
+		"cured": "29",
+		"death": "1",
+		"state_code": "10"
+	},
+	{
+		"sno": "6",
+		"state_name": "Chandigarh",
+		"positive": "21",
+		"cured": "7",
+		"death": "0",
+		"state_code": "04"
+	},
+	{
+		"sno": "7",
+		"state_name": "Chhattisgarh",
+		"positive": "33",
+		"cured": "17",
+		"death": "0",
+		"state_code": "22"
+	},
+	{
+		"sno": "8",
+		"state_name": "Dadra and Nagar Haveli",
+		"positive": "0",
+		"cured": "0",
+		"death": "0",
+		"state_code": "26"
+	},
+	{
+		"sno": "9",
+		"state_name": "Daman and Diu",
+		"positive": "0",
+		"cured": "0",
+		"death": "0",
+		"state_code": "25"
+	},
+	{
+		"sno": "10",
+		"state_name": "Delhi",
+		"positive": "1578",
+		"cured": "42",
+		"death": "32",
+		"state_code": "07"
+	},
+	{
+		"sno": "11",
+		"state_name": "Goa",
+		"positive": "7",
+		"cured": "5",
+		"death": "0",
+		"state_code": "30"
+	},
+	{
+		"sno": "12",
+		"state_name": "Gujarat",
+		"positive": "871",
+		"cured": "64",
+		"death": "36",
+		"state_code": "24"
+	},
+	{
+		"sno": "13",
+		"state_name": "Haryana",
+		"positive": "205",
+		"cured": "43",
+		"death": "3",
+		"state_code": "06"
+	},
+	{
+		"sno": "14",
+		"state_name": "Himachal Pradesh",
+		"positive": "35",
+		"cured": "16",
+		"death": "1",
+		"state_code": "02"
+	},
+	{
+		"sno": "15",
+		"state_name": "Jammu and Kashmir",
+		"positive": "300",
+		"cured": "36",
+		"death": "4",
+		"state_code": "01"
+	},
+	{
+		"sno": "16",
+		"state_name": "Jharkhand",
+		"positive": "28",
+		"cured": "0",
+		"death": "2",
+		"state_code": "20"
+	},
+	{
+		"sno": "17",
+		"state_name": "Karnataka",
+		"positive": "315",
+		"cured": "82",
+		"death": "13",
+		"state_code": "29"
+	},
+	{
+		"sno": "18",
+		"state_name": "Kerala",
+		"positive": "388",
+		"cured": "218",
+		"death": "3",
+		"state_code": "32"
+	},
+	{
+		"sno": "19",
+		"state_name": "Ladakh",
+		"positive": "17",
+		"cured": "10",
+		"death": "0",
+		"state_code": "37"
+	},
+		{
+		"sno": "20",
+		"state_name": "Lakshadweep",
+		"positive": "0",
+		"cured": "0",
+		"death": "0",
+		"state_code": "31"
+	},
+	{
+		"sno": "21",
+		"state_name": "Madhya Pradesh",
+		"positive": "1120",
+		"cured": "64",
+		"death": "53",
+		"state_code": "23"
+	},
+	{
+		"sno": "22",
+		"state_name": "Maharashtra",
+		"positive": "2919",
+		"cured": "295",
+		"death": "187",
+		"state_code": "27"
+	},
+	{
+		"sno": "23",
+		"state_name": "Manipur",
+		"positive": "2",
+		"cured": "1",
+		"death": "0",
+		"state_code": "14"
+	},
+		{
+		"sno": "24",
+		"state_name": "Meghalaya",
+		"positive": "7",
+		"cured": "0",
+		"death": "1",
+		"state_code": "17"
+	},
+	{
+		"sno": "25",
+		"state_name": "Mizoram",
+		"positive": "1",
+		"cured": "0",
+		"death": "0",
+		"state_code": "15"
+	},
+		{
+		"sno": "26",
+		"state_name": "Nagaland",
+		"positive": "0",
+		"cured": "0",
+		"death": "0",
+		"state_code": "13"
+	},
+	{
+		"sno": "27",
+		"state_name": "Odisha",
+		"positive": "60",
+		"cured": "18",
+		"death": "1",
+		"state_code": "21"
+	},
+	{
+		"sno": "28",
+		"state_name": "Puducherry",
+		"positive": "7",
+		"cured": "1",
+		"death": "0",
+		"state_code": "34"
+	},
+	{
+		"sno": "29",
+		"state_name": "Punjab",
+		"positive": "186",
+		"cured": "27",
+		"death": "13",
+		"state_code": "03"
+	},
+	{
+		"sno": "30",
+		"state_name": "Rajasthan",
+		"positive": "1023",
+		"cured": "147",
+		"death": "3",
+		"state_code": "08"
+	},
+		{
+		"sno": "31",
+		"state_name": "Sikkim",
+		"positive": "0",
+		"cured": "0",
+		"death": "0",
+		"state_code": "11"
+	},
+	{
+		"sno": "32",
+		"state_name": "Tamil Nadu",
+		"positive": "1242",
+		"cured": "118",
+		"death": "14",
+		"state_code": "33"
+	},
+	{
+		"sno": "33",
+		"state_name": "Tripura",
+		"positive": "2",
+		"cured": "1",
+		"death": "0",
+		"state_code": "16"
+	},
+		{
+		"sno": "34",
+		"state_name": "Telengana",
+		"positive": "698",
+		"cured": "120",
+		"death": "18",
+		"state_code": "36"
+	},
+	{
+		"sno": "35",
+		"state_name": "Uttarakhand",
+		"positive": "37",
+		"cured": "9",
+		"death": "0",
+		"state_code": "05"
+	},
+	{
+		"sno": "36",
+		"state_name": "Uttar Pradesh",
+		"positive": "773",
+		"cured": "68",
+		"death": "13",
+		"state_code": "09"
+	},
+	{
+		"sno": "37",
+		"state_name": "West Bengal",
+		"positive": "231",
+		"cured": "42",
+		"death": "7",
+		"state_code": "19"
+	}
+]
