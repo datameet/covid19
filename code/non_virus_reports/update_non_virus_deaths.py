@@ -33,6 +33,7 @@ states["Assam"]="AS"
 states["Bihar"]="BR"
 states["Chattisgarh"]="CT"
 states["Chhattisgarh"]="CT"
+states["Chhatisgarh"]="CT"
 states["Goa"]="GA"
 states["Gujarat"]="GJ"
 states["Haryana"]="HR"
@@ -60,6 +61,7 @@ states["Telengana"]="TG"
 states["Telangana"]="TG"
 states["Tripura"]="TR"
 states["Uttarakhand"]="UT"
+states["Uttrakhand"]="UT"
 states["Uttar Pradesh"]="UP"
 states["UP"]="UP"
 states["West Bengal"]="WB"
@@ -86,7 +88,7 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_APRIL_19"
+batch_to_process = "SET_APRIL_21"
 message = ""
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
