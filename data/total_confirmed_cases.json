@@ -102,5 +102,6 @@
 {"key":["2020-04-24T17:00:00.00+05:30","total_confirmed"],"value":23452},
 {"key":["2020-04-25T08:00:00.00+05:30","total_confirmed"],"value":24506},
 {"key":["2020-04-25T17:00:00.00+05:30","total_confirmed"],"value":24893},
-{"key":["2020-04-26T08:00:00.00+05:30","total_confirmed"],"value":26496}
+{"key":["2020-04-26T08:00:00.00+05:30","total_confirmed"],"value":26496},
+{"key":["2020-04-26T17:00:00.00+05:30","total_confirmed"],"value":26605}
 ]}
