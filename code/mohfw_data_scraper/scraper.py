@@ -154,7 +154,7 @@ def scrape_now():
 
 	print(full_file_name)
 	print(full_date_text)
-
+	counter = 1
 
 	title = title +"extracted_date_text "+str(extracted_date_text)						
 	message = message + "full_file_name ="+ full_file_name +" \n"
@@ -231,13 +231,16 @@ def scrape_now():
 				try:
 					if database[_id]:
 						print("***** EXISTS *****")
+						print(counter)
 						print(data)
 						message = message + " \n EXISTS " +str(_id) +" \n"
 				except couchdb.http.ResourceNotFound:
 						print("##### ADDING #####")
+						print(counter)
 						message = message + " \n ADDING " +str(_id) +" \n"
 						database.save(data)	
 						print(data)
+				counter = counter + 1
 		print("SENDING message")
 		print(title)
 		print(message)
