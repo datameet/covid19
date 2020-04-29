@@ -41,6 +41,7 @@ states["Jharkhand#"]="JH"
 states["Karnataka"]="KA"
 states["Kerala"]="KL"
 states["Madhya Pradesh"]="MP"
+states["Madhya Pradesh#"]="MP"
 states["Maharashtra"]="MH"
 states["Manipur"]="MN"
 states["Meghalaya"]="ML"
@@ -224,7 +225,7 @@ def scrape_now():
 				#data["confirmed_india"] =  int( (tds[5]).get_text() )
 				#data["confirmed_foreign"] = int( (tds[7]).get_text() )
 				data["cured"] = int( (tds[7]).get_text() )
-				data["death"] = int( (tds[9]).get_text() )
+				data["death"] = int( (tds[9]).get_text().replace("#","") )
 				data["source"] ="mohfw"
 				data["type"] ="cases"
 
