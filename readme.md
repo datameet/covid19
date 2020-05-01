@@ -8,7 +8,7 @@ Community collected, cleaned and organized COVID-19 datasets about India sourced
 ## Folder Structure
 
 - data - has final parsed data
-- downloads - downloads from various sites either as pdf, html etc. For backup and future parsing
+- downloads - downloads from various sites either as pdf, html etc. For backup and future parsing. Don't use unless you know what you are doing.
 - code - some code for parsing, downloading etc
 - docs - Compiled html docs that is served as website. Raw files are in website folder.
 - research - any research visuals etc
