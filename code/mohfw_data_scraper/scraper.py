@@ -24,6 +24,9 @@ pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
 force_run = True
+date_pattern = "as on : \d\d May 2020, \d\d:\d\d "
+month_formatted = "05"
+
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -96,7 +99,7 @@ def getFormattedDate(t):
 	# month = date_parts[1]
 	# if len(month) == 1:
 	# 	month = "0"+month
-	month = "05"
+	month = month_formatted
 
 	# year = date_parts[2]
 	year = "2020"
@@ -145,7 +148,6 @@ def scrape_now():
 
 	txt = getContents()
 
-	date_pattern = "as on : \d\d May 2020, \d\d:\d\d "
 	x = re.findall(date_pattern, txt)
 	extracted_date_text = x[0]
 	print(extracted_date_text)
