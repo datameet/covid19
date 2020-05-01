@@ -27,16 +27,10 @@ force_run = False
 
 couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
-database = couch[couchdb_db_name]
+#database = couch[couchdb_db_name]
 
-for d in database:
-	if str(d).startswith("2020"):
+for d in database:	
+	if str(d).startswith("2020-04-01T17"):
 		data = database[d]
-		if data["type"] == "cases":
-			if "confirmed" in data:
-				pass
-			else:
-				confirmed = data["confirmed_india"] + data["confirmed_foreign"]
-				data["confirmed"] = confirmed
-				#database.save(data)
-				print(dict(data))
+		print(d)
+		#database.delete(data)
