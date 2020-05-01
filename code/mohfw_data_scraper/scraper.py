@@ -151,6 +151,8 @@ def scrape_now():
 	print(extracted_date_text)
 
 	full_date_text =  getFormattedDate(extracted_date_text)
+	#for force run specific file or date
+	#full_date_text = "2020-05-01T08:00:00.00+05:30"
 	full_file_name =  archive_folder_path.format(getFileName(full_date_text))
 
 	print(full_file_name)
