@@ -145,7 +145,7 @@ def scrape_now():
 
 	txt = getContents()
 
-	date_pattern = "as on : \d\d April 2020, \d\d:\d\d "
+	date_pattern = "as on : \d\d May 2020, \d\d:\d\d "
 	x = re.findall(date_pattern, txt)
 	extracted_date_text = x[0]
 	print(extracted_date_text)
