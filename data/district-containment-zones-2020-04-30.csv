@@ -169,7 +169,7 @@ District ID,District Name,State,Classification
 168,Botad,Gujarat,Orange Zone
 169,Narmada,Gujarat,Orange Zone
 170,Chhotaudepur,Gujarat,Orange Zone
-171,Mahisagar,Gujarat,Oranse Zone
+171,Mahisagar,Gujarat,Orange Zone
 172,Mahesana,Gujarat,Orange Zone
 173,Patan,Gujarat,Orange Zone
 174,Kheda,Gujarat,Orange Zone
@@ -180,7 +180,7 @@ District ID,District Name,State,Classification
 179,GirSomnath,Guiarat,Orange Zone
 180,Dang,Gujarat,Orange Zone
 181,Sa ba rKa ntha,Guiarat,Orange Zone
-182,Tapi,Gujarat,Oranse Zone
+182,Tapi,Gujarat,Orange Zone
 183,Jamnagar,Guiarat,Orange Zone
 184,Surendranagar,Guiarat,Orange Zone
 185,Morbi,Guiarat,Green Zone
@@ -211,11 +211,11 @@ District ID,District Name,State,Classification
 210,Mahendragarh,Haryana,Green Zone
 211,Rewari,Haryana,Green Zone
 212,Una,Himachal Pradesh,Orange Zone
-213,Chamba,Himachal Pradesh,Oranse Zone
+213,Chamba,Himachal Pradesh,Orange Zone
 214,Hamirpur,Himachal Pradesh,Orange Zone
 215,Kangra,Himachal Pradesh,Orange Zone
 216,Sirmaur,Himachal Pradesh,Orange Zone
-217,Solan,Himachal Pradesh,Oranse Zone
+217,Solan,Himachal Pradesh,Orange Zone
 218,Bilaspur,Himachal Pradesh,Green Zone
 219,Kinnaur,Himachal Pradesh,Green Zone
 220,Kullu,Himachal Pradesh,Green Zone
@@ -230,13 +230,13 @@ District ID,District Name,State,Classification
 229,Kupwara,Jammu And Kashmir,Orange Zone
 230,Ganderbal,Jammu And Kashmir,Orange Zone
 231,Jammu,Jammu And Kashmir,Orange Zone
-232,Udhampur,Jammu And Kashmir,Oranse Zone
+232,Udhampur,Jammu And Kashmir,Orange Zone
 233,Kulgam,Jammu And Kashmir,Orange Zone
 234,Budgam,Jammu And Kashmir,Orange Zone
 235,Samba,Jammu And Kashmir,Orange Zone
 236,Kathua,Jammu And Kashmir,Orange Zone
 237,Rajouri,Jammu And Kashmir,Orange Zone
-238,Ramban,Jamrnu And Kashmir,Oranse Zone
+238,Ramban,Jamrnu And Kashmir,Orange Zone
 239,Reasi,Jammu And Kashmir,Orange Zone
 240,Pulwama,Jammu And Kashmir,Green Zone
 241,Kishtwar,Jammu And Kashmir,Green Zone
@@ -306,7 +306,7 @@ District ID,District Name,State,Classification
 305,Patha namthitta,Kerala,Orange Zone
 306,Malappuram,Kerala,Orange Zone
 307,Thi ruvananthapuram,Kerala,Orange Zone
-308,Alappuzha,Kerala,Oranee Zone
+308,Alappuzha,Kerala,Orange Zone
 309,Thrissur,Kerala,Orange Zone
 310,Ernakulam,Kerala,Green Zone
 311,Wayanad,Kerala,Green Zone
@@ -334,13 +334,13 @@ District ID,District Name,State,Classification
 333,Alirajpur,Madhya Pradesh,Orange Zone
 334,Tikamgarh,Madhya Pradesh,Orange Zone
 335,Shahdol,Madhya Pradesh,Orange Zone
-336,Sheopur,Madhya Pradesh,Oranee Zone
+336,Sheopur,Madhya Pradesh,Orange Zone
 337,Dindori,Madhya Pradesh,Orange Zone
 338,Burhanpur,Madhya Pradesh,Orange Zone
 339,Harda,Madhya Pradesh,Orange Zone
 340,Betul,Madhya Pradesh,Orange Zone
 341,Vidisha,Madhya Pradesh,Orange Zone
-342,Morena,Madhya Pradesh,Oranse Zone
+342,Morena,Madhya Pradesh,Orange Zone
 343,Rewa,Madhya Pradesh,Green Zone
 344,Ashoknagar,Madhya Pradesh,Green Zone
 345,Rajgarh,Madhya Pradesh,Green Zone
@@ -516,14 +516,14 @@ District ID,District Name,State,Classification
 515,Jhalawar,Rajasthan,Red Zone
 516,Tonk,Rajasthan,Orange Zone
 517,Jaisalmer,Rajasthan,Orange Zone
-518,Dausa,Rajasthan,Oranse Zone
+518,Dausa,Rajasthan,Orange Zone
 519,Jhunjhunu,Rajasthan,Orange Zone
 520,Hanumangarh,Rajasthan,Orange Zone
 521,Bhilwara,Rajasthan,Orange Zone
 522,SawaiMadhopur,Rajasthan,Orange Zone
 523,Chittorgarh,Rajasthan,Orange Zone
 524,Dungarpur,Rajasthan,Orange Zone
-525,Udaipur,Rajasthan,Oranse Zone
+525,Udaipur,Rajasthan,Orange Zone
 526,Dholpur,Rajasthan,Orange Zone
 527,Sikar,Rajasthan,Orange Zone
 528,Alwar,Rajasthan,Orange Zone
@@ -531,7 +531,7 @@ District ID,District Name,State,Classification
 530,Churu,Rajasthan,Orange Zone
 531,Pali,Rajasthan,Orange Zone
 532,Barmer,Rajasthan,Orange Zone
-533,Karauli,Rajasthan,Oranse Zone
+533,Karauli,Rajasthan,Orange Zone
 534,Rajsamand,Rajasthan,Orange Zone
 535,Baran,Rajasthan,Green Zone
 536,Bundi,Rajasthan,Green Zone
@@ -560,12 +560,12 @@ District ID,District Name,State,Classification
 559,Nagapattinam,Tamil Nadu,Orange Zone
 560,Dindigul,Tamil Nadu,Orange Zone
 561,Villupuram,Tamil Nadu,Orange Zone
-562,Coimbatore,Tamil Nadu,Oranqe Zone
+562,Coimbatore,Tamil Nadu,Orange Zone
 563,Cuddalore,Tamil Nadu,Orange Zone
 564,Salem,Tamil Nadu,Orange Zone
 565,Karur,Tamil Nadu,Orange Zone
 566,Tuticorin,Tamil Nadu,Orange Zone
-567,Tiruchirappalli,Tamil Nadu,Oranee Zone
+567,Tiruchirappalli,Tamil Nadu,Orange Zone
 568,Tirupathur,Tamil Nadu,Orange Zone
 569,Kannivakumari,Tamil Nadu,Orange Zone
 570,Tiruvannamalai,Tamil Nadu,Orange Zone
@@ -599,7 +599,7 @@ District ID,District Name,State,Classification
 598,Mahabubnagar,Telangana,Orange Zone
 599,Jagitial,Telangana,Orange Zone
 600,RajannaSircilla,Telangana,Orange Zone
-601,JayashankarBhupalapally,Telangana,Oranse Zone
+601,JayashankarBhupalapally,Telangana,Orange Zone
 602,Medak,Telangana,Orange Zone
 603,Jangoan,Telangana,Orange Zone
 604,Narayanpet,Telangana,Orange Zone
@@ -642,7 +642,7 @@ District ID,District Name,State,Classification
 641,Bareilly,Uttar Pradesh,Red Zone
 642,Ghaziabad,Uttar Pradesh,Orange Zone
 643,Ha pur,Uttar Pradesh,Orange Zone
-644,Baghpat,Uttar Pradesh,Oranee Zone
+644,Baghpat,Uttar Pradesh,Orange Zone
 645,Basti,Uttar Pradesh,Orange Zone
 646,Budaun,Uttar Pradesh,Orange Zone
 647,Sambhal,Uttar Pradesh,Orange Zone
@@ -651,10 +651,10 @@ District ID,District Name,State,Classification
 650,Sitapur,Uttar Pradesh,Orange Zone
 651,Bahraich,Uttar Pradesh,Orange Zone
 652,Kannauj,Uttar Pradesh,Orange Zone
-653,Azamgarh,Uttar Pradesh,Oranee Zone
+653,Azamgarh,Uttar Pradesh,Orange Zone
 654,Mainpuri,Uttar Pradesh,Orange Zone
 655,Shravasti,Uttar Pradesh,Orange Zone
-656,Banda,Uttar Pradesh,Oranse Zone
+656,Banda,Uttar Pradesh,Orange Zone
 657,Jaunpur,Uttar Pradesh,Orange Zone
 658,Etah,Uttar Pradesh,Orange Zone
 659,Kasganj,Uttar Pradesh,Orange Zone
@@ -670,7 +670,7 @@ District ID,District Name,State,Classification
 669,Bhadohi,Uttar Pradesh,Orange Zone
 670,Unnao,Uttar Pradesh,Orange Zone
 671,Pilibhit,Uttar Pradesh,Orange Zone
-672,Balrampur,Uttar Pradesh,Oranee Zone
+672,Balrampur,Uttar Pradesh,Orange Zone
 673,Ayodhya,Uttar Pradesh,Orange Zone
 674,Gorakhpur,Uttar Pradesh,Orange Zone
 675,Jhansi,Uttar Pradesh,Orange Zone
