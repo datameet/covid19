@@ -15,6 +15,8 @@ Before using this data, please note the following:
 - [Thejesh GN](https://thejeshgn.com)
 
 
+## Project Visual
+The main project visualization is at <a href="https://thejeshgn.com/projects/covid19-india/non-virus-deaths/">Non Virus Deaths</a>
 
 
 ## Submit
@@ -66,6 +68,10 @@ Individual articles are archived automatically on archive.org.
 
 ### API
 Send an email to thej@datameet.org to get access to API.
+
+
+## License
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>
 
 
 ## Projects Using this dataset
