@@ -17,7 +17,7 @@ pushover_api_token =str(os.environ.get("pushover_api_token"))
 pushover_user_key = str(os.environ.get("pushover_user_key"))
 pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
-non_virus_archive_folder_path = "../../non-virus-deaths-media-reports-backup/{0}"
+non_virus_archive_folder_path = "../../downloads/non-virus-deaths-media-reports-backup/{0}"
 force_run = False
 
 couchdb_db_name = "covid19"
@@ -89,7 +89,7 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_APRIL_30"
+batch_to_process = "SET_MAY_3"
 message = ""
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
