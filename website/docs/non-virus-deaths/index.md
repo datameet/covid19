@@ -10,9 +10,9 @@ Before using this data, please note the following:
 
 ## Credits
 
-- [Kanika](https://twitter.com/_kanikas_)
-- [Aman](https://twitter.com/CB_Aman)
-- [Thejesh GN](https://thejeshgn.com)
+- [Kanika](https://twitter.com/_kanikas_) Researcher and Activist
+- [Aman](https://twitter.com/CB_Aman) Assistant Professor of legal practice at Jindal Global School of Law 
+- [Thejesh GN](https://thejeshgn.com) Public Interest Technologist, DataMeet
 
 
 ## Project Visual
