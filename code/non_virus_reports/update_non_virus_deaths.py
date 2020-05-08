@@ -89,7 +89,7 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_MAY_6"
+batch_to_process = "SET_MAY_7"
 message = ""
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
