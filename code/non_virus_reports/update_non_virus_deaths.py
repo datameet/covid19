@@ -22,7 +22,7 @@ force_run = False
 
 couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
-#database = couch[couchdb_db_name]
+database = couch[couchdb_db_name]
 
 
 states = {}
@@ -89,7 +89,7 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_MAY_7"
+batch_to_process = "SET_MAY_9"
 message = ""
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
@@ -156,7 +156,7 @@ with open(file_name) as csv_file:
 
 
 
-                  #database.save(data)     
+                  database.save(data)     
                               
 
             #print(message)
