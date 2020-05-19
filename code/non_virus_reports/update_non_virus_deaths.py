@@ -21,6 +21,8 @@ non_virus_archive_folder_path = "../../downloads/non-virus-deaths-media-reports-
 force_run = False
 
 couchdb_db_name = "covid19"
+batch_to_process = "SET_MAY_19"
+
 couch = couchdb.Server(covid_db_full_url)
 #database = couch[couchdb_db_name]
 
@@ -42,10 +44,13 @@ states["Jharkhand"]="JH"
 states["Karnataka"]="KA"
 states["Kerala"]="KL"
 states["Madhya Pradesh"]="MP"
+states["Madhya Pradesh."]="MP"
 states["MP"]="MP"
 states["Maharashtra"]="MH"
 states["Maharahstra"]="MH"
 states["Maharastra"]="MH"
+states["Maharasthra"]="MH"
+states["Maharashta"]="MH"
 states["Manipur"]="MN"
 states["Meghalaya"]="ML"
 states["Mizoram"]="MZ"
@@ -59,6 +64,7 @@ states["Sikkim"]="SK"
 states["Tamil Nadu"]="TN"
 states["Telengana"]="TG"
 states["Telangana"]="TG"
+states["Telanga"]="TG"
 states["Tripura"]="TR"
 states["Uttarakhand"]="UT"
 states["Uttrakhand"]="UT"
@@ -90,7 +96,6 @@ def getDateTimeObject(passed_string):
 
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
-batch_to_process = "SET_MAY_18"
 message = ""
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
@@ -99,7 +104,7 @@ with open(file_name) as csv_file:
       insert_rows = 0
       for row in csv_reader:            
             print("------------------------------------------------------------------------------")
-            if line_count == 0 or line_count == 1:
+            if line_count == 0:
                   pass
             else:
                   batch = row[0]
@@ -148,7 +153,11 @@ with open(file_name) as csv_file:
                   data["source_date"] = source_date
                   data["source_link"] = source_link
                   parsed_uri = urlparse(source_link)
-                  data["source"] = parsed_uri.netloc
+                  source = parsed_uri.netloc
+                  if "archive.org" in source:
+                        source = "archive.org"
+                  data["source"] = source
+                  data["category"] = row[11] 
                   
                   insert_rows = insert_rows + 1
                   print("----------------------------------------------------------------------------{0}".format(insert_rows))
