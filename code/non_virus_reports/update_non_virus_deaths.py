@@ -109,6 +109,7 @@ def getDateTimeObject(passed_string):
 
 file_name = non_virus_archive_folder_path.format("non-virus-deaths.tsv")
 message = ""
+total_deaths = 0
 print("============================================{batch_to_process}===================================".format(batch_to_process=batch_to_process))
 with open(file_name) as csv_file:
       csv_reader = csv.reader(csv_file, delimiter='\t')
@@ -174,9 +175,14 @@ with open(file_name) as csv_file:
                   data["occupation"] = row[13] 
                   
                   insert_rows = insert_rows + 1
-                  print("----------------------------------------------------------------------------{0}, line_count={1}".format(insert_rows, line_count))
+                  print("----------------------------------------------------------------------------{0}, line_count={1}".format(insert_rows, line_count+1 ))
                   print(data)
+                  total_deaths = total_deaths + deaths
 
+                  # if (line_count+1) == int(row[14]):
+                  #       pass
+                  # else: 
+                  #       break
 
 
 
@@ -185,3 +191,4 @@ with open(file_name) as csv_file:
 
             #print(message)
             line_count = line_count + 1
+print("total_deaths", total_deaths)
