@@ -21,7 +21,7 @@ non_virus_archive_folder_path = "../../downloads/non-virus-deaths-media-reports-
 force_run = False
 
 couchdb_db_name = "covid19"
-batch_to_process = "SET_MAY_19"
+batch_to_process = "SET_MAY_21"
 
 couch = couchdb.Server(covid_db_full_url)
 #database = couch[couchdb_db_name]
@@ -56,8 +56,8 @@ states["Manipur"]="MN"
 states["Meghalaya"]="ML"
 states["Mizoram"]="MZ"
 states["Nagaland"]="NL"
-#states["Odisha"]="OR"
-states["Orissa"]="OR"
+states["Odisha"]="OR"
+#states["Orissa"]="OR"
 states["Punjab"]="PB"
 states["Rajasthan"]="RJ"
 #states["Rajastha"]="RJ"
@@ -85,11 +85,22 @@ states["Ladakh"]="LA"
 states["Lakshadweep"]="LD"
 states["Pondicherry"]="PY"
 #states["Puducherry"]="PY"
+states["Unspecified"] = ""
 
 
 def getDateTimeObject(passed_string):
+      print("incoming", passed_string)
       passed_string = passed_string.replace(" ","")
-      if passed_string == "":
+      passed_string = passed_string.replace("notspeficied","")      
+      passed_string = passed_string.replace("notspecified","")      
+      passed_string = passed_string.replace("Unspecified","")      
+      passed_string = passed_string.replace("not speficied","")      
+      passed_string = passed_string.replace("\n","")
+      passed_string = passed_string.replace("Notspecified","")
+
+      
+      
+      if passed_string == "" or passed_string == "-":
             return ""
       date_time_obj1 = datetime.datetime.strptime(passed_string,"%B%d,%Y" )  #      
       return time.strftime("%Y-%m-%d", date_time_obj1.timetuple())
@@ -159,9 +170,11 @@ with open(file_name) as csv_file:
                         source = "archive.org"
                   data["source"] = source
                   data["category"] = row[11] 
+                  data["name_age"] = row[12] 
+                  data["occupation"] = row[13] 
                   
                   insert_rows = insert_rows + 1
-                  print("----------------------------------------------------------------------------{0}".format(insert_rows))
+                  print("----------------------------------------------------------------------------{0}, line_count={1}".format(insert_rows, line_count))
                   print(data)
 
 

@@ -5,7 +5,7 @@ from os import path
 import bs4
 from bs4 import BeautifulSoup
 import couchdb
-
+import time
 # I scripted this in urgency, So code quality or the logic isn't great.
 # This is mostly a hack. 
 
@@ -27,7 +27,7 @@ force_run = False
 
 couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
-database = couch[couchdb_db_name]
+#database = couch[couchdb_db_name]
 
 for d in database:
 		data = database[d]
@@ -35,3 +35,4 @@ for d in database:
 			if data["type"] == "non_virus_deaths":
 				print(data)
 				#database.delete(data)
+				#time.sleep(.05)
