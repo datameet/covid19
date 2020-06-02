@@ -24,8 +24,8 @@ pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
 force_run = True
-date_pattern = "as on : \d\d May 2020, \d\d:\d\d "
-month_formatted = "05"
+date_pattern = "as on : \d\d June 2020, \d\d:\d\d "
+month_formatted = "06"
 
 
 states = {}
