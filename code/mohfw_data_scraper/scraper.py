@@ -73,7 +73,8 @@ states["Ladakh"]="LA"
 states["Lakshadweep"]="LD"
 states["Pondicherry"]="PY"
 states["Puducherry"]="PY"
-
+states["Dadra and Nagar Haveli and Daman and Diu"]="DN_DD"
+states["Telangana"]="TG"
 
 
 
