@@ -21,7 +21,7 @@ non_virus_archive_folder_path = "../../downloads/non-virus-deaths-media-reports-
 force_run = False
 
 couchdb_db_name = "covid19"
-batch_to_process = "SET_MAY"
+batch_to_process = "SET_JUNE-13"
 
 couch = couchdb.Server(covid_db_full_url)
 #database = couch[couchdb_db_name]
@@ -86,9 +86,13 @@ states["Lakshadweep"]="LD"
 states["Pondicherry"]="PY"
 #states["Puducherry"]="PY"
 states["Unspecified"] = ""
+states[""] = ""
+
 
 
 def getDateTimeObject(passed_string):
+      if passed_string == "May 10-27, 2020":
+            return "2020-05"
       print("incoming", passed_string)
       passed_string = passed_string.replace(" ","")
       passed_string = passed_string.replace("notspeficied","")      
@@ -98,8 +102,8 @@ def getDateTimeObject(passed_string):
       passed_string = passed_string.replace("\n","")
       passed_string = passed_string.replace("Notspecified","")
       passed_string = passed_string.replace("unspecified","")
+      passed_string = passed_string.replace("unclear","")
 
-      
       
       if passed_string == "" or passed_string == "-":
             return ""
@@ -170,6 +174,8 @@ with open(file_name) as csv_file:
                   source = parsed_uri.netloc
                   if "archive.org" in source:
                         source = "archive.org"
+                  if "docs.google.com" in source:
+                        source = source_publication
                   data["source"] = source
                   data["category"] = row[11] 
                   data["name_age"] = row[12] 
