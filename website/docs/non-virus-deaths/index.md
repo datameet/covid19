@@ -12,6 +12,7 @@ Before using this data, please note the following:
 
 - [Kanika](https://twitter.com/_kanikas_) Researcher and Activist
 - [Aman](https://twitter.com/CB_Aman) Assistant Professor of legal practice at Jindal Global School of Law 
+- [Krushna](https://twitter.com/anhsurk) PhD student at Syracuse University
 - [Thejesh GN](https://thejeshgn.com) Public Interest Technologist, DataMeet
 
 
