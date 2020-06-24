@@ -25,6 +25,7 @@ covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
 force_run = True
 date_pattern = "as on : \d\d June 2020, \d\d:\d\d "
+#date_pattern = "as on : \d\d	June 2020, \d\d:\d\d "
 month_formatted = "06"
 
 
@@ -150,6 +151,7 @@ def scrape_now():
 	database = couch[couchdb_db_name]
 
 	txt = getContents()
+	print(txt)
 
 	x = re.findall(date_pattern, txt)
 	extracted_date_text = x[0]
