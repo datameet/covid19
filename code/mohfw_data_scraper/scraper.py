@@ -24,8 +24,8 @@ pushover_url = "https://api.pushover.net/1/messages.json"
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")) 
 force_run = True
-date_pattern = "as on : \d\d June 2020, \d\d:\d\d "
-#date_pattern = "as on : \d\d	June 2020, \d\d:\d\d "
+#date_pattern = "as on : \d\d June 2020, \d\d:\d\d "
+date_pattern = "as on : \d\d	June 2020, \d\d:\d\d "
 month_formatted = "06"
 
 
@@ -99,7 +99,7 @@ def getFormattedDate(t):
 	if len(day) == 1:
 		day = "0"+day
 
-
+		print("day=", day)
 	# month = date_parts[1]
 	# if len(month) == 1:
 	# 	month = "0"+month
@@ -151,11 +151,13 @@ def scrape_now():
 	database = couch[couchdb_db_name]
 
 	txt = getContents()
-	print(txt)
+	#print(txt)
 
 	x = re.findall(date_pattern, txt)
 	extracted_date_text = x[0]
-	print(extracted_date_text)
+	print("before",extracted_date_text)
+	extracted_date_text = extracted_date_text.replace("\t", " ")
+	print("after",extracted_date_text)
 
 	full_date_text =  getFormattedDate(extracted_date_text)
 	#for force run specific file or date
@@ -248,7 +250,7 @@ def scrape_now():
 						print("##### ADDING #####")
 						print(counter)
 						message = message + " \n ADDING " +str(_id) +" \n"
-						database.save(data)	
+						#database.save(data)	
 						print(data)
 				counter = counter + 1
 		print("SENDING message")
