@@ -93,6 +93,10 @@ states[""] = ""
 def getDateTimeObject(passed_string):
       if passed_string == "May 10-27, 2020":
             return "2020-05"
+
+      if passed_string == "May 21-June 4 2020":
+            return "2020-06"
+      
       print("incoming", passed_string)
       passed_string = passed_string.replace(" ","")
       passed_string = passed_string.replace("notspeficied","")      
