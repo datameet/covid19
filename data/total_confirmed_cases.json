@@ -205,5 +205,5 @@
 {"key":["2020-07-25T08:00:00.00+05:30","total_confirmed"],"value":1336861},
 {"key":["2020-07-26T08:00:00.00+05:30","total_confirmed"],"value":1385522},
 {"key":["2020-07-27T08:00:00.00+05:30","total_confirmed"],"value":1435453},
-{"key":["28-07-2020T8:00:00.00+05:30","total_confirmed"],"value":{"error":"builtin_reduce_error","reason":"The _sum function requires that map values be numbers, arrays of numbers, or objects. Objects cannot be mixed with other data structures. Objects can be arbitrarily nested, provided that the values for all fields are themselves numbers, arrays of numbers, or objects.","caused_by":"375799"}}
+{"key":["2020-07-28T8:00:00.00+05:30","total_confirmed"],"value":1483156}
 ]}

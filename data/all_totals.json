@@ -823,8 +823,8 @@
 {"key":["2020-07-27T08:00:00.00+05:30","cured"],"value":917568},
 {"key":["2020-07-27T08:00:00.00+05:30","death"],"value":32771},
 {"key":["2020-07-27T08:00:00.00+05:30","total_confirmed_cases"],"value":1435453},
-{"key":["28-07-2020T8:00:00.00+05:30","active_cases"],"value":485114},
-{"key":["28-07-2020T8:00:00.00+05:30","cured"],"value":{"error":"builtin_reduce_error","reason":"The _sum function requires that map values be numbers, arrays of numbers, or objects. Objects cannot be mixed with other data structures. Objects can be arbitrarily nested, provided that the values for all fields are themselves numbers, arrays of numbers, or objects.","caused_by":"3704"}},
-{"key":["28-07-2020T8:00:00.00+05:30","death"],"value":{"error":"builtin_reduce_error","reason":"The _sum function requires that map values be numbers, arrays of numbers, or objects. Objects cannot be mixed with other data structures. Objects can be arbitrarily nested, provided that the values for all fields are themselves numbers, arrays of numbers, or objects.","caused_by":"3"}},
-{"key":["28-07-2020T8:00:00.00+05:30","total_confirmed_cases"],"value":{"error":"builtin_reduce_error","reason":"The _sum function requires that map values be numbers, arrays of numbers, or objects. Objects cannot be mixed with other data structures. Objects can be arbitrarily nested, provided that the values for all fields are themselves numbers, arrays of numbers, or objects.","caused_by":"0"}}
+{"key":["2020-07-28T8:00:00.00+05:30","active_cases"],"value":496988},
+{"key":["2020-07-28T8:00:00.00+05:30","cured"],"value":952743},
+{"key":["2020-07-28T8:00:00.00+05:30","death"],"value":33425},
+{"key":["2020-07-28T8:00:00.00+05:30","total_confirmed_cases"],"value":1483156}
 ]}

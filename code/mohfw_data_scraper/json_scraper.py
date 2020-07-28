@@ -72,7 +72,7 @@ def getCurrentDataTimeAsString():
 	print("now =", now)
 	#current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
 	timepart = "T8:00:00.00+05:30"
-	current_date_time = now.strftime("%d-%m-%Y")+timepart	
+	current_date_time = now.strftime("%Y-%m-%d")+timepart	
 	return current_date_time
 
 
@@ -145,9 +145,9 @@ def scrape_data_now():
 			data["_id"] = _id
 			data["state"] = state_code
 			data["report_time"] = current_date_time
-			data["cured"] = state_data["cured"]
-			data["death"] = state_data["death"]
-			data["confirmed"] =   state_data["positive"] 
+			data["cured"] = int(state_data["new_cured"])
+			data["death"] = int(state_data["new_death"])
+			data["confirmed"] =   int(state_data["new_positive"])
 			data["source"] ="mohfw"
 			data["type"] ="cases"
 
