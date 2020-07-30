@@ -162,7 +162,7 @@ def scrape_data_now():
 					print("##### ADDING #####")
 					#print(counter)
 					message = message + " \n ADDING " +str(_id) +" \n"
-					#database.save(data)	
+					database.save(data)	
 					print(data)
 			
 
