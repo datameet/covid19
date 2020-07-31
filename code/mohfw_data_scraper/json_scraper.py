@@ -72,8 +72,9 @@ def getCurrentDataTimeAsString():
 	now = datetime.now() 
 	print("now =", now)
 	#current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
+	datepart = now.strftime("%Y-%m-%d")
 	timepart = "T8:00:00.00+05:30"
-	current_date_time = now.strftime("%Y-%m-%d")+timepart	
+	current_date_time = datepart +timepart	
 	return current_date_time
 
 
@@ -104,6 +105,49 @@ def getDataJSONFileName(partial_file_name):
 	return current_date_time+partial_file_name
 
 
+def load_data(load, current_date_time):
+	couchdb_db_name = "covid19"
+	couch = couchdb.Server(covid_db_full_url)
+	database = couch[couchdb_db_name]
+	message = ""
+	json_data = json.loads(load)
+	for state_data in json_data:
+		print("---------------------")
+		print(state_data)
+		print("---------------------")
+		state_name = state_data["state_name"]
+		if state_name == "":
+			continue
+		
+		state_code = states[state_name]
+		state_code = state_code.lower()
+
+		_id =  current_date_time+"|"+state_code
+
+		data = {}
+		data["_id"] = _id
+		data["state"] = state_code
+		data["report_time"] = current_date_time
+		data["cured"] = int(state_data["new_cured"])
+		data["death"] = int(state_data["new_death"])
+		data["confirmed"] =   int(state_data["new_positive"])
+		data["source"] ="mohfw"
+		data["type"] ="cases"
+
+		try:
+			if database[_id]:
+				print("***** EXISTS *****")
+				#print(counter)
+				print(data)
+				message = message + " \n EXISTS " +str(_id) +" \n"
+		except couchdb.http.ResourceNotFound:
+				print("##### ADDING #####")
+				#print(counter)
+				message = message + " \n ADDING " +str(_id) +" \n"
+				#database.save(data)	
+				print(data)
+
+
 
 def scrape_data_now():
 	load = True
@@ -124,47 +168,51 @@ def scrape_data_now():
 		print("creating:", json_full_file_name)
 		f = open(json_full_file_name, "a")
 		f.write(data)
-	
-	if load:
-		couchdb_db_name = "covid19"
-		couch = couchdb.Server(covid_db_full_url)
-		database = couch[couchdb_db_name]
-		message = ""
-		json_data = json.loads(data)
-		for state_data in json_data:
-			print("---------------------")
-			print(state_data)
-			print("---------------------")
-			state_name = state_data["state_name"]
-			if state_name == "":
-				continue
+	load_data(load, current_date_time)
 			
-			state_code = states[state_name]
-			_id =  current_date_time+"|"+state_code
-
-			data = {}
-			data["_id"] = _id
-			data["state"] = state_code
-			data["report_time"] = current_date_time
-			data["cured"] = int(state_data["new_cured"])
-			data["death"] = int(state_data["new_death"])
-			data["confirmed"] =   int(state_data["new_positive"])
-			data["source"] ="mohfw"
-			data["type"] ="cases"
-
-			try:
-				if database[_id]:
-					print("***** EXISTS *****")
-					#print(counter)
-					print(data)
-					message = message + " \n EXISTS " +str(_id) +" \n"
-			except couchdb.http.ResourceNotFound:
-					print("##### ADDING #####")
-					#print(counter)
-					message = message + " \n ADDING " +str(_id) +" \n"
-					database.save(data)	
-					print(data)
 			
+# def load_file_now(file_name, file_date_time):
+# 	x = json_full_file_name = archive_folder_path.format("data_json")+"/"+file_name
+# 	with open(x, 'r') as file:
+# 		file_data = file.read()
+# 		load_data(file_data, file_date_time)
+
+# def reload_a_day_backup(file_name):
+# 	couchdb_db_name = "covid19"
+# 	couch = couchdb.Server(covid_db_full_url)
+# 	database = couch[couchdb_db_name]
+# 	message = ""
+
+# 	x = json_full_file_name = archive_folder_path.format("data_json")+"/"+file_name
+# 	json_data = []
+# 	with open(x, 'r') as f:
+# 		for line in f:
+# 			print(line[:-1])
+# 			json_data.append(json.loads(line[:-2]))
+# 			#break
+# 	for data_doc in json_data:
+# 		data = data_doc["value"]
+# 		print(data)
+# 		_id = data["_id"]
+# 		del data["_rev"]
+# 		try:
+# 			if database[_id]:
+# 				print("***** EXISTS *****")
+# 				#print(counter)
+# 				print(data)
+# 				message = message + " \n EXISTS " +str(_id) +" \n"
+# 		except couchdb.http.ResourceNotFound:
+# 				print("##### ADDING #####")
+# 				#print(counter)
+# 				message = message + " \n ADDING " +str(_id) +" \n"
+# 				database.save(data)	
+# 				print(data)
+
+
+
+
 
 if __name__ == "__main__":
-	scrape_data_now()
+	#load_file_now("2020-07-30T8:00:00.00+05:30_md5_24e44d1ff66267db8af66da9e8181b40.json", "2020-07-30T8:00:00.00+05:30")
+	#scrape_data_now()
+	reload_a_day_backup("2020-07-28.json")
