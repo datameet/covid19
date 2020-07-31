@@ -73,7 +73,7 @@ def getCurrentDataTimeAsString():
 	print("now =", now)
 	#current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
 	datepart = now.strftime("%Y-%m-%d")
-	timepart = "T8:00:00.00+05:30"
+	timepart = "T08:00:00.00+05:30"
 	current_date_time = datepart +timepart	
 	return current_date_time
 
@@ -168,14 +168,14 @@ def scrape_data_now():
 		print("creating:", json_full_file_name)
 		f = open(json_full_file_name, "a")
 		f.write(data)
-	load_data(load, current_date_time)
+		load_data(data, current_date_time)
 			
-			
-# def load_file_now(file_name, file_date_time):
-# 	x = json_full_file_name = archive_folder_path.format("data_json")+"/"+file_name
-# 	with open(x, 'r') as file:
-# 		file_data = file.read()
-# 		load_data(file_data, file_date_time)
+
+def load_file_now(file_name, file_date_time):
+	x = json_full_file_name = archive_folder_path.format("data_json")+"/"+file_name
+	with open(x, 'r') as file:
+		file_data = file.read()
+		load_data(file_data, file_date_time)
 
 # def reload_a_day_backup(file_name):
 # 	couchdb_db_name = "covid19"
@@ -213,6 +213,6 @@ def scrape_data_now():
 
 
 if __name__ == "__main__":
-	#load_file_now("2020-07-30T8:00:00.00+05:30_md5_24e44d1ff66267db8af66da9e8181b40.json", "2020-07-30T8:00:00.00+05:30")
-	#scrape_data_now()
-	reload_a_day_backup("2020-07-28.json")
+	#load_file_now("2020-07-29T8:00:00.00+05:30_md5_f78743ba6e502fd8f08a1eb05ebec121.json", "2020-07-29T08:00:00.00+05:30")
+	scrape_data_now()
+	#reload_a_day_backup("2020-07-28.json")
