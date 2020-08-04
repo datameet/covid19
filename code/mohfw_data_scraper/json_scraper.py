@@ -144,7 +144,7 @@ def load_data(load, current_date_time):
 				print("##### ADDING #####")
 				#print(counter)
 				message = message + " \n ADDING " +str(_id) +" \n"
-				#database.save(data)	
+				database.save(data)	
 				print(data)
 
 
