@@ -1,0 +1,2 @@
+BENGALURU PDF SCRAPER
+Other scrapers will attempt to get PDFs from source. This one will not, as the PDF provided is a:very large and b:has inconsistent page ranges for data. I have provided inputs for customizing the page range scraped, the pdf file name, and the date the data is current to. Defaults to reading pdf from downloads/city-containment-zones-backup/bengaluru.
