@@ -1,8 +1,13 @@
 import os
 from datetime import date
 import tabula
-os.chdir("../../")
 
+#change cwd so script can be run from wherever
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+
+os.chdir("../../../" )
 today = date.today()
 
 # format date to standard
