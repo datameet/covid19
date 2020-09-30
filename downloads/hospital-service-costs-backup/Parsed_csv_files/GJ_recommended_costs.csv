@@ -1,0 +1,6 @@
+ward_type,cost_per_day
+General ward,9000
+HDU,12600
+ICU without ventilator,18150
+"ICU with ventilator
++ ICU",21850

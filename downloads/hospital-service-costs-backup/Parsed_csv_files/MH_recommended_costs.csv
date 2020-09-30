@@ -1,0 +1,4 @@
+hospital_category,nabh_accredited,ward_type,cost_per_day,includes_ppe_cost
+All,NA,General ward,4000,No
+All,NA,ICU without ventilator,7500,No
+All,NA,ICU with ventilator,9000,No

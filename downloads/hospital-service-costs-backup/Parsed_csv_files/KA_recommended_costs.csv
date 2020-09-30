@@ -1,0 +1,9 @@
+ward_type,cost_per_day,hospital_category
+General ward,5200,Referred by Pulbic Health Official -Public Hospital
+HDU,7000,Referred by Pulbic Health Official -Public Hospital
+Isolation ICU without ventilator -,8500,Referred by Pulbic Health Official -Public Hospital
+Isolation ICU with ventilator,10000,Referred by Pulbic Health Official -Public Hospital
+General ward,10000,Patients Directly Admitted
+HDU,12000,Patients Directly Admitted
+Isolation ICU without ventilator,15000,Patients Directly Admitted
+Isolation ICU with ventilator,25000,Patients Directly Admitted

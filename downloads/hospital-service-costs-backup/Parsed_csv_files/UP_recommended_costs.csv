@@ -1,0 +1,7 @@
+nabh_accredited,ward_type,cost_per_day,includes_ppe_cost
+Yes,Isolation Bed,10000,Yes
+Yes,ICU without ventilator,15000,Yes
+Yes,ICU with ventilator,18000,Yes
+No,Isolation Bed,8000,Yes
+No,ICU without ventilator,13000,Yes
+No,ICU with ventilator,15000,Yes
