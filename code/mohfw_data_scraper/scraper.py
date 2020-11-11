@@ -162,7 +162,7 @@ def scrape_now():
 
 	full_date_text =  getFormattedDate(extracted_date_text)
 	#for force run specific file or date
-	#full_date_text = "2020-05-01T08:00:00.00+05:30"
+	full_date_text = "2020-11-09T08-00-00-00+05-30"
 	full_file_name =  archive_folder_path.format(getFileName(full_date_text))
 
 	print(full_file_name)
@@ -172,7 +172,7 @@ def scrape_now():
 	title = title +"extracted_date_text "+str(extracted_date_text)						
 	message = message + "full_file_name ="+ full_file_name +" \n"
 	message = message +  "full_date_text ="+ full_date_text +" \n"
-
+	print(force_run)
 	if path.exists(full_file_name):
 		message = message +  " FILE EXISTS NOTHING TO BE DONE \n"
 		print("FILE Exists and nothing to be done")
@@ -216,7 +216,7 @@ def scrape_now():
 
 
 				report_time = full_date_text
-				state = (tds[3]).get_text()
+				state = (tds[1]).get_text()
 				state = state.replace("Union Territory of ","")
 				state = state.strip()
 				state_code = ""
@@ -233,19 +233,20 @@ def scrape_now():
 				data["_id"] = _id
 				data["state"] = state_code
 				data["report_time"] = report_time
-				data["confirmed"] =  int( (tds[11]).get_text() )
 				#data["confirmed_india"] =  int( (tds[5]).get_text() )
 				#data["confirmed_foreign"] = int( (tds[7]).get_text() )
-				data["cured"] = int( (tds[7]).get_text() )
-				data["death"] = int( (tds[9]).get_text().replace("#","") )
+				data["cured"] = int( (tds[4]).get_text() )
+				data["death"] = int( (tds[6]).get_text().replace("#","") )
+				data["confirmed"] =  int( (tds[2]).get_text() ) + data["cured"] + data["death"]
 				data["source"] ="mohfw"
 				data["type"] ="cases"
-
+				print("-----------------------------------------")
+				print(data)
+				print("-----------------------------------------")
 				try:
 					if database[_id]:
 						print("***** EXISTS *****")
-						print(counter)
-						print(data)
+						print(counter)						
 						message = message + " \n EXISTS " +str(_id) +" \n"
 				except couchdb.http.ResourceNotFound:
 						print("##### ADDING #####")
