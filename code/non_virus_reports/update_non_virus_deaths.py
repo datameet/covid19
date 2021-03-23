@@ -21,7 +21,7 @@ non_virus_archive_folder_path = "../../downloads/non-virus-deaths-media-reports-
 force_run = False
 
 couchdb_db_name = "covid19"
-batch_to_process = "SET_JUNE-13"
+batch_to_process = "SET_AUG_2020"
 
 couch = couchdb.Server(covid_db_full_url)
 #database = couch[couchdb_db_name]
@@ -96,6 +96,8 @@ def getDateTimeObject(passed_string):
 
       if passed_string == "May 21-June 4 2020":
             return "2020-06"
+      if passed_string == "unclear":
+            return "2020"
       
       print("incoming", passed_string)
       passed_string = passed_string.replace(" ","")
