@@ -16,3 +16,5 @@ extra_javascript:
     - 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
     - 'https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js'
     - 'js/oxygen_datatable.js'
+markdown_extensions:
+  - meta    
