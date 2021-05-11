@@ -4,7 +4,7 @@ We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of o
 ## Data
 
 ### Download
-We have semi parsed data availabe as [CSV](https://raw.githubusercontent.com/datameet/covid19/master/data/oxygen_shortage_deaths_in_india.csv).
+We have semi parsed data availabe as [CSV](https://github.com/datameet/covid19/releases/download/0.1/oxygen_shortage_deaths_in_india.csv).
 
 `Right click on link -> Save link as.`
 
