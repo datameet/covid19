@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js" integrity="sha512-cd6CHE+XWDQ33ElJqsi0MdNte3S+bQY819f7p3NUHgwQQLXSKjE4cPZTeGNI+vaxZynk1wVU3hoHmow3m089wA==" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">  
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
-
-
-</head>
-<body onload="get_data_create_table()">
-    <table id="data_table">
-    </table>
-</body>
-<script type="text/javascript">
 function create_table(tabledata){
     console.log(tabledata);
+    console.log("datatable started")
+    console.log($('#data_table'))
     $('#data_table').DataTable( {
         data: tabledata,
         pageLength: 25,
@@ -44,14 +30,10 @@ function create_table(tabledata){
         ]
     } );
 
-console.log("completed")
+console.log("datatable created")
 }
 
 function get_data_create_table(){
-    data_array = []
-    // d3.csv("https://raw.githubusercontent.com/datameet/covid19/master/data/oxygen_shortage_deaths_in_india.csv", function(data) {
-    //     create_table(data)
-    // });
 
     d3.csv('https://raw.githubusercontent.com/datameet/covid19/master/data/oxygen_shortage_deaths_in_india.csv')
       .then(function(data) {
@@ -64,5 +46,8 @@ function get_data_create_table(){
       })
 
 }
-</script>
-</html>
+
+$( document ).ready(function() {
+  get_data_create_table()
+});
+

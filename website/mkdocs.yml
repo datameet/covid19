@@ -9,9 +9,10 @@ nav:
     - Reference: reference.md
     - Tools: tools.md
 site_dir: './../docs'
-# extra_css:
-#     - 'bower_components/leaflet/dist/leaflet.css'
-# extra_javascript:
-#     - 'https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.0/d3.min.js'
-#     - 'bower_components/leaflet/dist/leaflet.js'
-#     - 'js/mapsplot.js'
+extra_css:
+    - 'https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css'
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js'
+    - 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+    - 'https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js'
+    - 'js/oxygen_datatable.js'

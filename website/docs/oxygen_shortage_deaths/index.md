@@ -1,6 +1,10 @@
 # Oxygen Shortage Deaths
 We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of oxygen, shortage of oxygen, or denial of ‌oxygen‌ ‌in‌ ‌hospitals‌ ‌during‌ ‌the‌ ‌second‌ ‌wave‌ ‌of‌ ‌the‌ ‌Covid-19‌ ‌pandemic‌ ‌in‌ ‌India‌. The‌ ‌deaths‌ ‌recorded‌ ‌are‌ ‌based‌ ‌on‌ ‌reports‌ ‌from‌ ‌newspapers‌ ‌and‌ ‌news‌ ‌media‌ ‌in‌ ‌English‌ ‌and‌  ‌regional‌ ‌languages, social media, and‌ ‌networks‌ ‌of‌ ‌volunteers‌ ‌working‌ ‌on‌ ‌the‌ ‌ground.‌ ‌We have been tracking‌ ‌these sources‌, verifying‌ ‌details,‌ ‌checking‌ ‌for‌ ‌duplication,‌ and extracting necessary information from these reports. 
 
+## License
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>
+
+
 ## Data
 
 ### Download
@@ -9,19 +13,24 @@ We have semi parsed data availabe as [CSV](https://github.com/datameet/covid19/r
 `Right click on link -> Save link as.`
 
 ### Columns
-- S.No. 
-- Date of Incident 
-- Hospital/Place  
-- District  
-- State 
-- No of Deaths  
-- Category  
-- Source  
-- Date of Report  
-- Reference - Link to reference news article
+- s_no - S.No. 
+- date_of_incident - Date of Incident 
+- hospital_place   - Hospital/Place  
+- district - District  
+- state - State 
+- no_of_deaths - No of Deaths  
+- category - Category  
+- source - Source  of the information, like News, Social Media etc
+- date_of_report - Date of Report  
+- reference - Link to reference material
 
 ### Web Archive of media
 Individual articles are archived automatically on archive.org. 
+
+### Browse
+
+<table id="data_table"></table>
+
 
 ## Frequently Asked Questions
 <details><summary style="cursor: pointer; color: #3b8dbd; font-weight: bold;">1.What‌ ‌are‌ you ‌doing?‌ ‌</summary>
@@ -64,6 +73,3 @@ Efforts to collate data are continuous. We are planning to do weekly consolidate
 When multiple reports referring to the same incident cite different death counts, we usually record the lowest number, and note this discrepancy in the comments. In some incidents of conflicting reports, we have had access to a more reliable estimate, such as the estimate cited in court documents. This is the death count we have used in our database in such cases. In cases where government agencies or hospital authorities have denied that deaths  were because of oxygen denial, we have relied on multiple media reports to assess facts. In cases where a committee has been set up by the government to assess the cause of deaths, we have also relied on multiple reports. We will update our database when results from the committee reports are available. In cases where only one media report is available, we do not immediately add the deaths to our database. 
 </details>
 
-
-## License
-<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>
