@@ -106,15 +106,17 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#oxygen-shortage-deaths">Oxygen Shortage Deaths</a></li>
-            <li class="second-level"><a href="#license">License</a></li>
-                
             <li class="second-level"><a href="#data">Data</a></li>
                 
                 <li class="third-level"><a href="#download">Download</a></li>
                 <li class="third-level"><a href="#columns">Columns</a></li>
+                <li class="third-level"><a href="#quick-browse">Quick Browse</a></li>
                 <li class="third-level"><a href="#web-archive-of-media">Web Archive of media</a></li>
-                <li class="third-level"><a href="#browse">Browse</a></li>
             <li class="second-level"><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+                
+            <li class="second-level"><a href="#license">License</a></li>
+                
+            <li class="second-level"><a href="#projects-using-this-dataset">Projects Using this dataset</a></li>
                 
     </ul>
 </div></div>
@@ -122,15 +124,14 @@
 
 <h1 id="oxygen-shortage-deaths">Oxygen Shortage Deaths</h1>
 <p>We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of oxygen, shortage of oxygen, or denial of ‌oxygen‌ ‌in‌ ‌hospitals‌ ‌during‌ ‌the‌ ‌second‌ ‌wave‌ ‌of‌ ‌the‌ ‌Covid-19‌ ‌pandemic‌ ‌in‌ ‌India‌. The‌ ‌deaths‌ ‌recorded‌ ‌are‌ ‌based‌ ‌on‌ ‌reports‌ ‌from‌ ‌newspapers‌ ‌and‌ ‌news‌ ‌media‌ ‌in‌ ‌English‌ ‌and‌  ‌regional‌ ‌languages, social media, and‌ ‌networks‌ ‌of‌ ‌volunteers‌ ‌working‌ ‌on‌ ‌the‌ ‌ground.‌ ‌We have been tracking‌ ‌these sources‌, verifying‌ ‌details,‌ ‌checking‌ ‌for‌ ‌duplication,‌ and extracting necessary information from these reports. </p>
-<h2 id="license">License</h2>
-<p><a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
 <h2 id="data">Data</h2>
 <h3 id="download">Download</h3>
 <p>We have semi parsed data availabe as <a href="https://github.com/datameet/covid19/releases/download/0.1/oxygen_shortage_deaths_in_india.csv">CSV</a>.</p>
 <p><code>Right click on link -&gt; Save link as.</code></p>
 <h3 id="columns">Columns</h3>
+<p>Columns in CSV are self explanatory. They are all in small caps without any spaces. No special character other than <code>_</code> is used as part of column name.</p>
 <ul>
-<li>s_no - S.No. </li>
+<li>s_no - S.No. - General Sequence Number</li>
 <li>date_of_incident - Date of Incident </li>
 <li>hospital_place   - Hospital/Place  </li>
 <li>district - District  </li>
@@ -141,11 +142,12 @@
 <li>date_of_report - Date of Report  </li>
 <li>reference - Link to reference material</li>
 </ul>
-<h3 id="web-archive-of-media">Web Archive of media</h3>
-<p>Individual articles are archived automatically on archive.org. </p>
-<h3 id="browse">Browse</h3>
+<h3 id="quick-browse">Quick Browse</h3>
+<p>You can quickly browse the latest version of the data here. Filtering is possible using the Search box. You can click on the title to sort the table. You can use the pagination at the bottom of the table to explore page by page. You can also change rows per page. By default it is 25.</p>
 <table id="data_table"></table>
 
+<h3 id="web-archive-of-media">Web Archive of media</h3>
+<p>Individual articles are archived automatically on archive.org. </p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <p><details><summary style="cursor: pointer; color: #3b8dbd; font-weight: bold;">1.What‌ ‌are‌ you ‌doing?‌ ‌</summary>
 We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of oxygen, shortage of oxygen, or denial of ‌oxygen‌ ‌in‌ ‌hospitals‌ ‌during‌ ‌the‌ ‌second‌ ‌wave‌ ‌of‌ ‌the‌ ‌Covid-19‌ ‌pandemic‌ ‌in‌ ‌India‌. The‌ ‌deaths‌ ‌recorded‌ ‌are‌ ‌based‌ ‌on‌ ‌reports‌ ‌from‌ ‌newspapers‌ ‌and‌ ‌news‌ ‌media‌ ‌in‌ ‌English‌ ‌and‌  ‌regional‌ ‌languages, social media, and‌ ‌networks‌ ‌of‌ ‌volunteers‌ ‌working‌ ‌on‌ ‌the‌ ‌ground.‌ ‌We have been tracking‌ ‌these sources‌, verifying‌ ‌details,‌ ‌checking‌ ‌for‌ ‌duplication,‌ and extracting necessary information from these reports. 
@@ -185,7 +187,13 @@ Efforts to collate data are continuous. We are planning to do weekly consolidate
 <details>
 <summary style="cursor: pointer; color: #3b8dbd; font-weight: bold;">10. How are you verifying details of deaths and incidents? </summary>
 When multiple reports referring to the same incident cite different death counts, we usually record the lowest number, and note this discrepancy in the comments. In some incidents of conflicting reports, we have had access to a more reliable estimate, such as the estimate cited in court documents. This is the death count we have used in our database in such cases. In cases where government agencies or hospital authorities have denied that deaths  were because of oxygen denial, we have relied on multiple media reports to assess facts. In cases where a committee has been set up by the government to assess the cause of deaths, we have also relied on multiple reports. We will update our database when results from the committee reports are available. In cases where only one media report is available, we do not immediately add the deaths to our database. 
-</details></p></div>
+</details></p>
+<h2 id="license">License</h2>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></p>
+<h2 id="projects-using-this-dataset">Projects Using this dataset</h2>
+<ul>
+<li>If you are using this data in your project or article. Send me a link so we can add here.</li>
+</ul></div>
         
         
     </div>
