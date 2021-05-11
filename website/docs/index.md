@@ -25,6 +25,11 @@ Publishes the latest country level SARS-CoV-2 (COVID-19) testing status data. We
 
 There are many deaths (Suicide, due to lockdown, lathicharge, hunger ,during migration etc) reported from the field which are related to COVID-19 disease but are not attributed to virus. Community has collected them and organized them. 
 
+### [Media Report based Oxgen Shortage Deaths](./oxygen_shortage_deaths/index.md)
+
+We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of oxygen, shortage of oxygen, or denial of ‌oxygen‌ ‌in‌ ‌hospitals‌ ‌during‌ ‌the‌ ‌second‌ ‌wave‌ ‌of‌ ‌the‌ ‌Covid-19‌ ‌pandemic‌ ‌in‌ ‌India‌. The‌ ‌deaths‌ ‌recorded‌ ‌are‌ ‌based‌ ‌on‌ ‌reports‌ ‌from‌ ‌newspapers‌ ‌and‌ ‌news‌ ‌media‌ ‌in‌ ‌English‌ ‌and‌  ‌regional‌ ‌languages, social media, and‌ ‌networks‌ ‌of‌ ‌volunteers‌ ‌working‌ ‌on‌ ‌the‌ ‌ground.‌ ‌We have been tracking‌ ‌these sources‌, verifying‌ ‌details,‌ ‌checking‌ ‌for‌ ‌duplication,‌ and extracting necessary information from these reports. 
+
+
 
 
 <hr>
