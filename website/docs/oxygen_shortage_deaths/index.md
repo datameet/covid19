@@ -1,4 +1,4 @@
-# Oxgen Shortage Deaths
+# Oxygen Shortage Deaths
 We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of oxygen, shortage of oxygen, or denial of ‌oxygen‌ ‌in‌ ‌hospitals‌ ‌during‌ ‌the‌ ‌second‌ ‌wave‌ ‌of‌ ‌the‌ ‌Covid-19‌ ‌pandemic‌ ‌in‌ ‌India‌. The‌ ‌deaths‌ ‌recorded‌ ‌are‌ ‌based‌ ‌on‌ ‌reports‌ ‌from‌ ‌newspapers‌ ‌and‌ ‌news‌ ‌media‌ ‌in‌ ‌English‌ ‌and‌  ‌regional‌ ‌languages, social media, and‌ ‌networks‌ ‌of‌ ‌volunteers‌ ‌working‌ ‌on‌ ‌the‌ ‌ground.‌ ‌We have been tracking‌ ‌these sources‌, verifying‌ ‌details,‌ ‌checking‌ ‌for‌ ‌duplication,‌ and extracting necessary information from these reports. 
 
 ## Data
