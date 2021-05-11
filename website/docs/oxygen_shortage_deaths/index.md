@@ -10,7 +10,7 @@ We have semi parsed data availabe as [CSV](https://raw.githubusercontent.com/dat
 
 ### Columns
 - S.No. 
-- Date of Incidents 
+- Date of Incident 
 - Hospital/Place  
 - District  
 - State 
@@ -53,7 +53,7 @@ You can write to us at oxygendenialdeaths [at] gmail [dot] com. If you are on tw
 </details>
 <details>
 <summary style="cursor: pointer; color: #3b8dbd; font-weight: bold;">8.How‌ ‌can‌ ‌I‌ ‌support‌ ‌your‌ ‌effort?‌ ‌</summary>
-You can help us include any‌ ‌report ‌we‌ ‌may‌ ‌have‌ ‌missed‌ ‌by‌ ‌replying‌ ‌to‌ ‌our‌ ‌twitter‌ ‌thread‌. For personal stories, you can also email us, and for news stories, you can fill this form. Please also consider donating to groups who are directly helping in this crisis.
+You can help us include any‌ ‌report ‌we‌ ‌may‌ ‌have‌ ‌missed‌ ‌by‌ ‌replying‌ ‌to‌ ‌our‌ ‌[twitter‌ ‌thread](https://twitter.com/aditipriya_0301/status/1389977835096453124)‌. For personal stories, you can also email (`oxygendenialdeaths [at] gmail [dot] com`) us, and for news stories, [you can fill this form](https://docs.google.com/forms/d/e/1FAIpQLSfclBRyFpjqQLAzbxYKu1dmeMC5jJ_tsxBBkzbrgokZtI0sHQ/viewform?gxids=7628). Please also consider donating to groups who are directly helping in this crisis.
 </details>
 <details>
 <summary style="cursor: pointer; color: #3b8dbd; font-weight: bold;">9. What is the data release timeline? </summary>
