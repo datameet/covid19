@@ -7,8 +7,20 @@ We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of o
 
 ## Data
 
+### Browse
+
+** <big><big>Total deaths is 524.</big></big>** 
+
+Last updated at 2021-05-17 23:00:00 IST.
+
+Note: You can quickly browse the latest version of the data here. Filtering is possible using the Search box. You can click on the title to sort the table. You can use the pagination at the bottom of the table to explore page by page. You can also change rows per page. By default it is 25. 
+
+<table id="data_table"></table>
+
 ### Download
 We have semi parsed data availabe as [CSV](https://github.com/datameet/covid19/releases/download/0.1/oxygen_shortage_deaths_in_india.csv).
+
+<a class="btn btn-lg btn-success" href="https://github.com/datameet/covid19/releases/download/0.1/oxygen_shortage_deaths_in_india.csv"> <i class="fa fa-download fa-2x pull-left"></i> Download CSV</a>
 
 `Right click on link -> Save link as.`
 
@@ -25,12 +37,6 @@ Columns in CSV are self explanatory. They are all in small caps without any spac
 - source - Source  of the information, like News, Social Media etc
 - date_of_report - Date of Report  
 - reference - Link to reference material
-
-
-### Quick Browse
-You can quickly browse the latest version of the data here. Filtering is possible using the Search box. You can click on the title to sort the table. You can use the pagination at the bottom of the table to explore page by page. You can also change rows per page. By default it is 25.
-
-<table id="data_table"></table>
 
 ### Web Archive of media
 Individual articles are archived automatically on archive.org. 
