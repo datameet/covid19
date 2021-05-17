@@ -2,6 +2,7 @@ function create_table(tabledata){
     console.log(tabledata);
     console.log("datatable started")
     console.log($('#data_table'))
+    $.fn.dataTable.moment( 'DD-MM-YYYY');
     $('#data_table').DataTable( {
         data: tabledata,
         pageLength: 25,
@@ -31,6 +32,7 @@ function create_table(tabledata){
     } );
 
 console.log("datatable created")
+
 }
 
 function get_data_create_table(){
