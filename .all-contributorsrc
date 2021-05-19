@@ -1,0 +1,26 @@
+{
+  "projectName": "covid19",
+  "projectOwner": "datameet",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "thejeshgn",
+      "name": "Thejesh GN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76114?v=4",
+      "profile": "https://thejeshgn.com/",
+      "contributions": [
+        "code",
+        "data",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
