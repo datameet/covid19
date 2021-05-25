@@ -75,7 +75,7 @@ def getCurrentDataTimeAsString():
 	now = datetime.now() 
 	print("now =", now)
 	#current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
-	datepart = now.strftime("%Y-%m-%d")
+	datepart =  now.strftime("%Y-%m-%d") #"2021-05-25"
 	timepart = "T08:00:00.00+05:30"
 	current_date_time = datepart +timepart	
 	return current_date_time
