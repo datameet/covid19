@@ -9,9 +9,9 @@ We are recording‌ ‌deaths‌ ‌due‌ ‌to‌ ‌the‌ ‌lack‌ ‌of o
 
 ### Browse
 
-** <big><big>Total deaths is 512.</big></big>** 
+** <big><big>Total deaths is 619.</big></big>** 
 
-Last updated at 2021-05-19 20:20:00 IST.
+Last updated at 2021-05-27 11:00:00 IST.
 
 Note: You can quickly browse the latest version of the data here. Filtering is possible using the Search box. You can click on the title to sort the table. You can use the pagination at the bottom of the table to explore page by page. You can also change rows per page. By default it is 25. 
 
