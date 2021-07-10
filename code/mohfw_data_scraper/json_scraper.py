@@ -77,7 +77,7 @@ def getCurrentDataTimeAsString():
 	print("now =", now)
 	#current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
 	datepart =  now.strftime("%Y-%m-%d") 
-	datepart =  "2021-07-08"
+	#datepart =  "2021-07-08"
 	timepart = "T08:00:00.00+05:30"
 	current_date_time = datepart +timepart	
 	return current_date_time
@@ -218,6 +218,6 @@ def load_file_now(file_name, file_date_time):
 
 
 if __name__ == "__main__":
-	#load_file_now("2020-07-29T8:00:00.00+05:30_md5_f78743ba6e502fd8f08a1eb05ebec121.json", "2020-07-29T08:00:00.00+05:30")
+	#load_file_now("2021-07-09T08:00:00.00+05:30_md5_371ac6059334fcf03ec27815a73da119.json", "2021-07-09T08:00:00.00+05:30")
 	scrape_data_now()
 	#reload_a_day_backup("2020-07-28.json")
