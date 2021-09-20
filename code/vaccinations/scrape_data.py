@@ -97,8 +97,12 @@ def get_country_data(file_name):
     file.close()
 
     data_row = None
-    print(len(rows))
-    if report_time in country_datarow_exceptions:
+    print(len(rows))    
+    if "2021-02-25" in report_time or "2021-02-28" in report_time :
+        data_row = rows[0]
+    elif "2021-02-26" in report_time or "2021-02-27" in report_time :
+        data_row = rows[1]
+    elif report_time in country_datarow_exceptions:
         data_row = rows[country_datarow_exceptions[report_time]]
     elif report_time > "2021-07-03":
         data_row = rows[2]
@@ -110,15 +114,23 @@ def get_country_data(file_name):
     print("data_row", data_row)   
 
 
+
     start = 1
-    if len(data_row) > 3:
+
+    if "2021-02-25" in report_time:
+        start = 3
+    elif "2021-02-26" in report_time or "2021-02-27" in report_time or "2021-02-28" in report_time:
+        start = 2
+    elif len(data_row) > 3:
         start = 1
     else:
         start = 0
     
+    print("Starting at", start)
+
+    data["1stdose"] = int(data_row[start].replace(",",""))
+    data["2nddose"] = int(data_row[start+1].replace(",",""))
     data["total"] = int(data_row[start+2].replace(",",""))
-    data["1stdose"] = int(data_row[start+1].replace(",",""))
-    data["2nddose"] = int(data_row[start].replace(",",""))
     data["source"] = "mohfw"
     data["type"] = "vaccinations"
     return data
@@ -138,10 +150,9 @@ def parse_all_again():
     for file_name in only_files:
         report_time = get_datetime(file_name)
         print(report_time)
-        if report_time > "2021-08-01":
-            parse_data(file_name)
+        parse_data(file_name)
 
 
 if __name__ == "__main__":
-    parse_all_again()
-    #parse_data(file_name="2021-07-04-at-07-00-AM.pdf")
+    #parse_all_again()
+    parse_data(file_name="2021-09-20-at-07-00-AM.pdf")
