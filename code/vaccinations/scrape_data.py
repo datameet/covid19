@@ -11,7 +11,11 @@ import couchdb
 import subprocess
 import csv
 
+covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")).format("cumulative_vaccination_coverage/") 
+couchdb_db_name = "covid19"
+couch = couchdb.Server(covid_db_full_url)
+database = couch[couchdb_db_name]
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -63,12 +67,13 @@ states["Dadra and Nagar Haveli and Daman and Diu"]="DN_DD"
 states["Telangana"]="TG"
 
 country_datarow_exceptions = {
-    "2021-08-09-at-07-00-AM.pdf" :{"skip":"yes"}
+    "2021-08-09-at-07-00-AM.pdf" :{"skip":"yes"},
+    "2021-07-12-at-07-00-AM.pdf" :{"skip":"yes"}
 }
 
 def get_datetime(file_name):
     date_time = file_name.replace("-at-07-00-AM.pdf","")
-    date_time = date_time + "T07:00:00.00+05:30"
+    date_time = date_time + "T09:00:00.00+05:30"
     return date_time
 
 def get_country_data(file_name):
@@ -84,7 +89,7 @@ def get_country_data(file_name):
     data["report_time"] = report_time
 
     if file_name in country_datarow_exceptions :
-        return data
+        return None
     else:
         pass
 
@@ -142,17 +147,32 @@ def get_country_data(file_name):
 
 
 def parse_data(file_name):
-    print(get_country_data(file_name))
+    data = get_country_data(file_name)    
+    if data:
+        _id = data["_id"]
+        try:
+            if database[_id]:
+                print("##### UPDATING #####")
+                existing_data = database[_id]
+                _rev = existing_data["_rev"]
+                data["_rev"] = _rev        
+                database.save(data)
+        except couchdb.http.ResourceNotFound:
+                print("##### ADDING #####")
+                database.save(data) 
+    print("saved", data)
+
 
 def parse_all_again():
     only_files = ([f for f in listdir(archive_folder_path) if isfile(join(archive_folder_path, f))])
     only_files.sort()
     for file_name in only_files:
         report_time = get_datetime(file_name)
-        print(report_time)
-        parse_data(file_name)
+        if report_time > "2021-07-11":
+            print(report_time)
+            parse_data(file_name)
 
 
 if __name__ == "__main__":
     #parse_all_again()
-    parse_data(file_name="2021-09-20-at-07-00-AM.pdf")
+    #parse_data(file_name="2021-09-20-at-07-00-AM.pdf")
