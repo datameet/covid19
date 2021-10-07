@@ -218,5 +218,5 @@ def parse_state_data(file_name):
 
 if __name__ == "__main__":
     #parse_all_country_again()
-    parse_country_data(file_name="2021-10-06-at-07-00-AM.pdf")
+    parse_country_data(file_name="2021-10-07-at-07-00-AM.pdf")
     #parse_state_data(file_name="2021-02-25-at-07-00-AM.pdf")
