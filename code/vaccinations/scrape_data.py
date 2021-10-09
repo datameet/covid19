@@ -119,7 +119,6 @@ def get_country_data(file_name):
     print("data_row", data_row)   
 
 
-
     start = 1
 
     if "2021-02-25" in report_time:
@@ -127,11 +126,21 @@ def get_country_data(file_name):
     elif "2021-02-26" in report_time or "2021-02-27" in report_time or "2021-02-28" in report_time:
         start = 2
     elif len(data_row) > 3:
-        start = 1
+        new_data_row = data_row 
+        print("new_data_row",new_data_row)
+        data_row = []
+        for r in new_data_row:
+            print(r)
+            if r == "":
+                pass
+            else:
+                data_row.append(r) 
+        start = 0
     else:
         start = 0
     
     print("Starting at", start)
+    print("data_row", data_row)   
 
     data["1stdose"] = int(data_row[start].replace(",",""))
     data["2nddose"] = int(data_row[start+1].replace(",",""))
@@ -218,5 +227,5 @@ def parse_state_data(file_name):
 
 if __name__ == "__main__":
     #parse_all_country_again()
-    parse_country_data(file_name="2021-10-08-at-07-00-AM.pdf")
+    parse_country_data(file_name="2021-10-09-at-07-00-AM.pdf")
     #parse_state_data(file_name="2021-02-25-at-07-00-AM.pdf")
