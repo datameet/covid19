@@ -142,8 +142,8 @@ def get_country_data(file_name):
     print("Starting at", start)
     print("data_row", data_row)   
 
-    data["1stdose"] = int(data_row[start].replace(",",""))
-    data["2nddose"] = int(data_row[start+1].replace(",",""))
+    data["first_dose"] = int(data_row[start].replace(",",""))
+    data["second_dose"] = int(data_row[start+1].replace(",",""))
     data["total"] = int(data_row[start+2].replace(",",""))
     data["source"] = "mohfw"
     data["type"] = "vaccinations"
