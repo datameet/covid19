@@ -141,12 +141,11 @@ def get_country_data(file_name):
     
     print("Starting at", start)
     print("data_row", data_row)   
-
-    data["first_dose"] = int(data_row[start].replace(",",""))
-    data["second_dose"] = int(data_row[start+1].replace(",",""))
     data["total"] = int(data_row[start+2].replace(",",""))
     data["source"] = "mohfw"
     data["type"] = "vaccinations"
+    data["first_dose"] = int(data_row[start].replace(",",""))
+    data["second_dose"] = int(data_row[start+1].replace(",",""))
     return data
 
 
@@ -211,11 +210,9 @@ def parse_state_data(file_name):
         data["report_time"] = report_time
         data["source"] = "mohfw"
         data["type"] = "vaccinations"
-
-        data["1stdose"] = (row[4]).replace(",","")
-        data["2nddose"] = (row[5]).replace(",","")
         data["total"] = (row[6]).replace(",","")
-        
+        data["1stdose"] = (row[4]).replace(",","")
+        data["2nddose"] = (row[5]).replace(",","")        
         data_rows.append(data_row)
 
     file.close()
