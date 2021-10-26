@@ -92,6 +92,7 @@ def getDataJSON():
 	url = "https://www.mohfw.gov.in/data/datanew.json?"+getCurrentDataTimeAsString()
 	r = requests.get(url)	
 	txt = ""
+	print(r)
 	if r.status_code == 200:
 		txt = r.text
 		return txt
