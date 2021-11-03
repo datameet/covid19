@@ -132,7 +132,7 @@ def get_country_data(file_name):
         for r in new_data_row:
             print(r)
             if r == "":
-                pass
+                pass            
             else:
                 data_row.append(r) 
         start = 0
@@ -224,5 +224,5 @@ def parse_state_data(file_name):
 
 if __name__ == "__main__":
     #parse_all_country_again()
-    parse_country_data(file_name="2021-10-31-at-07-00-AM.pdf")
+    parse_country_data(file_name="2021-11-03-at-07-00-AM.pdf")
     #parse_state_data(file_name="2021-02-25-at-07-00-AM.pdf")
