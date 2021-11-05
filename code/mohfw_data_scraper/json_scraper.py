@@ -129,7 +129,7 @@ def load_data(load, current_date_time):
 		state_name = state_data["state_name"]
 		if state_name == "":
 			continue
-		
+		state_name = state_name.replace("*","")
 		state_code = states[state_name]
 		state_code = state_code.lower()
 
