@@ -17,6 +17,8 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
+FILE_NAME = "2021-11-12-at-07-00-AM.pdf"
+
 states = {}
 states["Andhra Pradesh"]="AP"
 states["Arunachal Pradesh"]="AR"
@@ -224,5 +226,5 @@ def parse_state_data(file_name):
 
 if __name__ == "__main__":
     #parse_all_country_again()
-    parse_country_data(file_name="2021-11-11-at-07-00-AM.pdf")
+    parse_country_data(file_name=FILE_NAME)
     #parse_state_data(file_name="2021-02-25-at-07-00-AM.pdf")
