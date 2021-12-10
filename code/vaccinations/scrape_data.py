@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2021-12-09-at-07-00-AM.pdf"
+FILE_NAME = "2021-12-10-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -82,7 +82,7 @@ def get_country_data(file_name):
     data_file = archive_folder_path + file_name
     csv_file_name = file_name +"_vaccine_country.csv"
     #print(data_file)
-    s = subprocess.call(["tabula-java","-a", "72.542,11.904,145.457,575.131", "-p", "1", data_file ,">",csv_file_name])
+    s = subprocess.call(["tabula-java","-a", "79.178,42.458,158.738,558.068", "-p", "1", data_file ,">",csv_file_name])
     file = open(csv_file_name)    
     csvreader = csv.reader(file)
     report_time = get_datetime(file_name)
