@@ -1,5 +1,5 @@
 import requests
-import re 
+import re
 import os
 from os import path
 from os import listdir
@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2021-12-18-at-07-00-AM.pdf"
+FILE_NAME = "2021-12-19-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
