@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2021-12-28-at-07-00-AM.pdf"
+FILE_NAME = "2021-12-29-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
