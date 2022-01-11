@@ -36,3 +36,18 @@ database = couch[couchdb_db_name]
             
 #         print(data)
 #         #database.save(data)
+
+
+# # FIX 3 - 2022-01-11, precaution_dose = null when it doesnt exist
+# with open('../../data/mohfw_vaccination_status.json') as json_file:
+#     dataset = json.load(json_file)
+#     rows = dataset["rows"]
+#     for data_row in rows:
+#         data = data_row["value"]
+#         if "precaution_dose" in data:
+#             pass
+#         else:
+#             data["precaution_dose"] = None
+            
+#         print(data)
+#         database.save(data)

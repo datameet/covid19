@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-01-09-at-07-00-AM.pdf"
+FILE_NAME = "2022-01-11-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -111,12 +111,15 @@ def get_country_data(file_name):
         data_row = rows[1]
     elif report_time in country_datarow_exceptions:
         data_row = rows[country_datarow_exceptions[report_time]]
+    elif report_time > "2022-01-10":
+        data_row = rows[3]
     elif report_time > "2021-07-03":
         data_row = rows[2]
-    elif len(rows) == 3:
-        data_row = rows[2]
-    elif len(rows) > 3:
-        data_row = rows[3]
+
+    # elif len(rows) == 3:
+    #     data_row = rows[2]
+    # elif len(rows) > 3:
+    #     data_row = rows[3]
     
     
     print("data_row", data_row)   
@@ -144,11 +147,13 @@ def get_country_data(file_name):
     
     print("Starting at", start)
     print("data_row", data_row)   
-    data["total"] = int(data_row[start+2].replace(",",""))
     data["source"] = "mohfw"
     data["type"] = "vaccinations"
     data["first_dose"] = int(data_row[start].replace(",",""))
     data["second_dose"] = int(data_row[start+1].replace(",",""))
+    data["first_dose_15_18"] = int(data_row[start+2].replace(",",""))
+    data["precaution_dose"] = int(data_row[start+3].replace(",",""))
+    data["total"] = int(data_row[start+4].replace(",",""))
     return data
 
 
