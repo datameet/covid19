@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-02-08-at-07-00-AM.pdf"
+FILE_NAME = "2022-02-01-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -152,8 +152,9 @@ def get_country_data(file_name):
     data["first_dose"] = int(data_row[start].replace(",",""))
     data["second_dose"] = int(data_row[start+1].replace(",",""))
     data["first_dose_15_18"] = int(data_row[start+2].replace(",",""))
-    data["precaution_dose"] = int(data_row[start+3].replace(",",""))
-    data["total"] = int(data_row[start+4].replace(",",""))
+    data["second_dose_15_18"] = int(data_row[start+3].replace(",",""))
+    data["precaution_dose"] = int(data_row[start+4].replace(",",""))
+    data["total"] = int(data_row[start+5].replace(",",""))
     return data
 
 
@@ -179,55 +180,55 @@ def parse_country_data(file_name):
     print("saved", data)
 
 
-def parse_all_country_again():
-    only_files = ([f for f in listdir(archive_folder_path) if isfile(join(archive_folder_path, f))])
-    only_files.sort()
-    for file_name in only_files:
-        report_time = get_datetime(file_name)
-        if report_time > "2021-07-11":
-            print(report_time)
-            parse_country_data(file_name)
+# def parse_all_country_again():
+#     only_files = ([f for f in listdir(archive_folder_path) if isfile(join(archive_folder_path, f))])
+#     only_files.sort()
+#     for file_name in only_files:
+#         report_time = get_datetime(file_name)
+#         if report_time > "2021-07-11":
+#             print(report_time)
+#             parse_country_data(file_name)
 
 
 
 
 
-def parse_state_data(file_name):
-    data_file = archive_folder_path + file_name
-    csv_file_name = file_name +"_vaccine_state.csv"
-    #print(data_file)
-    s = subprocess.call(["tabula-java","-a", "170.0,49.0,783.821,488.719", "-p", "1", data_file ,">",csv_file_name])
+# def parse_state_data(file_name):
+#     data_file = archive_folder_path + file_name
+#     csv_file_name = file_name +"_vaccine_state.csv"
+#     #print(data_file)
+#     s = subprocess.call(["tabula-java","-a", "170.0,49.0,783.821,488.719", "-p", "1", data_file ,">",csv_file_name])
     
-    file = open(csv_file_name)    
-    csvreader = csv.reader(file)
-    data_rows = []
-    report_time = get_datetime(file_name)
-    for row in csvreader:
-        print(row)
-        data = {}
-        state = row[1]
+#     file = open(csv_file_name)    
+#     csvreader = csv.reader(file)
+#     data_rows = []
+#     report_time = get_datetime(file_name)
+#     for row in csvreader:
+#         print(row)
+#         data = {}
+#         state = row[1]
         
-        if state in states:
-            state_code = states[state]
-        else:
-            print("state", state)
-            break
+#         if state in states:
+#             state_code = states[state]
+#         else:
+#             print("state", state)
+#             break
 
-        data["_id"] = report_time +"|vaccinations|"+state_code
-        data["state"] = state_code
-        data["report_time"] = report_time
-        data["source"] = "mohfw"
-        data["type"] = "vaccinations"
-        data["total"] = (row[6]).replace(",","")
-        data["1stdose"] = (row[4]).replace(",","")
-        data["2nddose"] = (row[5]).replace(",","")        
-        data_rows.append(data_row)
+#         data["_id"] = report_time +"|vaccinations|"+state_code
+#         data["state"] = state_code
+#         data["report_time"] = report_time
+#         data["source"] = "mohfw"
+#         data["type"] = "vaccinations"
+#         data["total"] = (row[6]).replace(",","")
+#         data["1stdose"] = (row[4]).replace(",","")
+#         data["2nddose"] = (row[5]).replace(",","")        
+#         data_rows.append(data_row)
 
-    file.close()
+#     file.close()
 
 
 
-    return data_rows
+#     return data_rows
 
 
 if __name__ == "__main__":
