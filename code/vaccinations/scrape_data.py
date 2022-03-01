@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-02-28-at-07-00-AM.pdf"
+FILE_NAME = "2022-03-01-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -141,7 +141,7 @@ def get_country_data(file_name):
                 pass            
             else:
                 data_row.append(r) 
-        start = 1
+        start = 0
     else:
         start = 0
     
