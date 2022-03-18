@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-03-16-at-07-00-AM.pdf"
+FILE_NAME = "2022-03-18-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -105,7 +105,9 @@ def get_country_data(file_name):
 
     data_row = None
     print(len(rows))    
-    if report_time > "2022-03-14":
+    if report_time > "2022-03-16":
+        data_row = rows[3]
+    elif report_time > "2022-03-14":
         data_row = rows[4]
     elif report_time > "2022-03-13":
         data_row = rows[3]
