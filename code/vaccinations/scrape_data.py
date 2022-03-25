@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-03-23-at-07-00-AM.pdf"
+FILE_NAME = "2022-03-25-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -82,7 +82,7 @@ def get_country_data(file_name):
     data_file = archive_folder_path + file_name
     csv_file_name = file_name +"_vaccine_country.csv"
     #print(data_file)
-    s = subprocess.call(["tabula-java","-a", "79.178,42.458,158.738,558.068", "-p", "1", data_file ,">",csv_file_name])
+    s = subprocess.call(["tabula-java","--lattice","-a", "78.413,15.683,177.863,569.543", "-p", "1", data_file ,">",csv_file_name])
     file = open(csv_file_name)    
     csvreader = csv.reader(file)
     report_time = get_datetime(file_name)
@@ -105,7 +105,9 @@ def get_country_data(file_name):
 
     data_row = None
     print(len(rows))    
-    if report_time > "2022-03-16":
+    if report_time > "2022-03-23":
+        data_row = rows[3]
+    elif report_time > "2022-03-16":
         data_row = rows[3]
     elif report_time > "2022-03-14":
         data_row = rows[4]
@@ -132,8 +134,9 @@ def get_country_data(file_name):
 
 
     start = 1
-
-    if report_time > "2022-03-13":
+    if report_time > "2022-03-23":
+        start = 1
+    elif report_time > "2022-03-13":
         start = 1
     elif report_time > "2022-03-13":
         start = 0
@@ -163,8 +166,9 @@ def get_country_data(file_name):
     data["second_dose"] = int(data_row[start+1].replace(",",""))
     data["first_dose_15_18"] = int(data_row[start+2].replace(",",""))
     data["second_dose_15_18"] = int(data_row[start+3].replace(",",""))
-    data["precaution_dose"] = int(data_row[start+4].replace(",",""))
-    data["total"] = int(data_row[start+5].replace(",",""))
+    data["first_dose_12_14"] = int(data_row[start+4].replace(",",""))
+    data["precaution_dose"] = int(data_row[start+5].replace(",",""))
+    data["total"] = int(data_row[start+6].replace(",",""))
     return data
 
 
