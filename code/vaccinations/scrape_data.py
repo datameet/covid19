@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-04-10-at-07-00-AM.pdf"
+FILE_NAME = "2022-04-11-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -167,8 +167,9 @@ def get_country_data(file_name):
     data["first_dose_15_18"] = int(data_row[start+2].replace(",",""))
     data["second_dose_15_18"] = int(data_row[start+3].replace(",",""))
     data["first_dose_12_14"] = int(data_row[start+4].replace(",",""))
-    data["precaution_dose"] = int(data_row[start+5].replace(",",""))
-    data["total"] = int(data_row[start+6].replace(",",""))
+    data["precaution_dose_18_59"] = int(data_row[start+5].replace(",",""))
+    data["precaution_dose"] = int(data_row[start+6].replace(",",""))
+    data["total"] = int(data_row[start+7].replace(",",""))
     return data
 
 
