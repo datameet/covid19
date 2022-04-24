@@ -1,0 +1,112 @@
+[
+{"sno":"1","state_name":"Andaman and Nicobar Islands","active":"0","positive":"10034","cured":"9905","death":"129","new_active":"1","new_positive":"10035","new_cured":"9905","new_death":"129","death_reconsille":"","total":"","state_code":"35"}
+ 	
+,
+{"sno":"2","state_name":"Andhra Pradesh","active":"33","positive":"2319657","cured":"2304894","death":"14730","new_active":"33","new_positive":"2319659","new_cured":"2304896","new_death":"14730","death_reconsille":"","total":"","state_code":"28"}
+ 	
+,
+{"sno":"3","state_name":"Arunachal Pradesh","active":"0","positive":"64495","cured":"64199","death":"296","new_active":"0","new_positive":"64495","new_cured":"64199","new_death":"296","death_reconsille":"","total":"","state_code":"12"}
+ 	
+,
+{"sno":"4","state_name":"Assam","active":"1353","positive":"724204","cured":"716212","death":"6639","new_active":"1354","new_positive":"724205","new_cured":"716212","new_death":"6639","death_reconsille":"","total":"","state_code":"18"}
+ 	
+,
+{"sno":"5","state_name":"Bihar","active":"16","positive":"830518","cured":"818246","death":"12256","new_active":"17","new_positive":"830522","new_cured":"818249","new_death":"12256","death_reconsille":"","total":"","state_code":"10"}
+ 	
+,
+{"sno":"6","state_name":"Chandigarh","active":"24","positive":"91982","cured":"90793","death":"1165","new_active":"28","new_positive":"91989","new_cured":"90796","new_death":"1165","death_reconsille":"","total":"","state_code":"04"}
+ 	
+,
+{"sno":"7","state_name":"Chhattisgarh","active":"11","positive":"1152228","cured":"1138183","death":"14034","new_active":"16","new_positive":"1152233","new_cured":"1138183","new_death":"14034","death_reconsille":"","total":"","state_code":"22"}
+ 	
+,
+{"sno":"8","state_name":"Dadra and Nagar Haveli and Daman and Diu","active":"0","positive":"11441","cured":"11437","death":"4","new_active":"0","new_positive":"11441","new_cured":"11437","new_death":"4","death_reconsille":"","total":"","state_code":"26"}
+ 	
+,
+{"sno":"9","state_name":"Delhi","active":"3253","positive":"1872699","cured":"1843282","death":"26164","new_active":"3705","new_positive":"1873793","new_cured":"1843922","new_death":"26166","death_reconsille":"","total":"2","state_code":"07"}
+ 	
+,
+{"sno":"10","state_name":"Goa","active":"23","positive":"245377","cured":"241522","death":"3832","new_active":"22","new_positive":"245379","new_cured":"241525","new_death":"3832","death_reconsille":"","total":"","state_code":"30"}
+ 	
+,
+{"sno":"11","state_name":"Gujarat","active":"98","positive":"1224225","cured":"1213184","death":"10943","new_active":"103","new_positive":"1224233","new_cured":"1213187","new_death":"10943","death_reconsille":"","total":"","state_code":"24"}
+ 	
+,
+{"sno":"12","state_name":"Haryana","active":"1632","positive":"988541","cured":"976291","death":"10618","new_active":"1692","new_positive":"988875","new_cured":"976565","new_death":"10618","death_reconsille":"","total":"","state_code":"06"}
+ 	
+,
+{"sno":"13","state_name":"Himachal Pradesh","active":"78","positive":"284744","cured":"280532","death":"4134","new_active":"75","new_positive":"284751","new_cured":"280542","new_death":"4134","death_reconsille":"","total":"","state_code":"02"}
+ 	
+,
+{"sno":"14","state_name":"Jammu and Kashmir","active":"55","positive":"453975","cured":"449169","death":"4751","new_active":"50","new_positive":"453978","new_cured":"449177","new_death":"4751","death_reconsille":"","total":"","state_code":"01"}
+ 	
+,
+{"sno":"15","state_name":"Jharkhand","active":"24","positive":"435199","cured":"429859","death":"5316","new_active":"22","new_positive":"435204","new_cured":"429865","new_death":"5317","death_reconsille":"","total":"1","state_code":"20"}
+ 	
+,
+{"sno":"16","state_name":"Karnataka","active":"1637","positive":"3946735","cured":"3905041","death":"40057","new_active":"1721","new_positive":"3946874","new_cured":"3905096","new_death":"40057","death_reconsille":"","total":"","state_code":"29"}
+ 	
+,
+{"sno":"17","state_name":"Kerala***","active":"2613","positive":"6538851","cured":"6467457","death":68819,"new_active":"2658","new_positive":"6539151","new_cured":"6467674","new_death":"68819","death_reconsille":38,"total":"38","state_code":"32"}
+ 	
+,
+{"sno":"18","state_name":"Ladakh","active":"4","positive":"28243","cured":"28011","death":"228","new_active":"4","new_positive":"28243","new_cured":"28011","new_death":"228","death_reconsille":"","total":"","state_code":"37"}
+ 	
+,
+{"sno":"19","state_name":"Lakshadweep","active":"0","positive":"11402","cured":"11350","death":"52","new_active":"0","new_positive":"11402","new_cured":"11350","new_death":"52","death_reconsille":"","total":"","state_code":"31"}
+ 	
+,
+{"sno":"20","state_name":"Madhya Pradesh","active":"61","positive":"1041292","cured":"1030496","death":"10735","new_active":"69","new_positive":"1041313","new_cured":"1030509","new_death":"10735","death_reconsille":"","total":"","state_code":"23"}
+ 	
+,
+{"sno":"21","state_name":"Maharashtra","active":"817","positive":"7876503","cured":"7727855","death":"147831","new_active":"869","new_positive":"7876697","new_cured":"7727996","new_death":"147832","death_reconsille":"","total":"1","state_code":"27"}
+ 	
+,
+{"sno":"22","state_name":"Manipur","active":"26","positive":"137205","cured":"135059","death":"2120","new_active":"27","new_positive":"137210","new_cured":"135063","new_death":"2120","death_reconsille":"","total":"","state_code":"14"}
+ 	
+,
+{"sno":"23","state_name":"Meghalaya","active":"7","positive":"93793","cured":"92193","death":"1593","new_active":"6","new_positive":"93794","new_cured":"92195","new_death":"1593","death_reconsille":"","total":"","state_code":"17"}
+ 	
+,
+{"sno":"24","state_name":"Mizoram","active":"672","positive":"226702","cured":"225336","death":"694","new_active":"662","new_positive":"226779","new_cured":"225423","new_death":"694","death_reconsille":"","total":"","state_code":"15"}
+ 	
+,
+{"sno":"25","state_name":"Nagaland","active":"1","positive":"35488","cured":"34727","death":"760","new_active":"1","new_positive":"35488","new_cured":"34727","new_death":"760","death_reconsille":"","total":"","state_code":"13"}
+ 	
+,
+{"sno":"26","state_name":"Odisha","active":"154","positive":"1287979","cured":"1278701","death":"9124","new_active":"127","new_positive":"1287980","new_cured":"1278729","new_death":"9124","death_reconsille":"","total":"","state_code":"21"}
+ 	
+,
+{"sno":"27","state_name":"Puducherry","active":"0","positive":"165777","cured":"163815","death":"1962","new_active":"0","new_positive":"165777","new_cured":"163815","new_death":"1962","death_reconsille":"","total":"","state_code":"34"}
+ 	
+,
+{"sno":"28","state_name":"Punjab","active":"145","positive":"759386","cured":"741497","death":"17744","new_active":"153","new_positive":"759401","new_cured":"741504","new_death":"17744","death_reconsille":"","total":"","state_code":"03"}
+ 	
+,
+{"sno":"29","state_name":"Rajasthan","active":"141","positive":"1283299","cured":"1273606","death":"9552","new_active":"143","new_positive":"1283317","new_cured":"1273622","new_death":"9552","death_reconsille":"","total":"","state_code":"08"}
+ 	
+,
+{"sno":"30","state_name":"Sikkim","active":"3","positive":"39149","cured":"38694","death":"452","new_active":"2","new_positive":"39149","new_cured":"38695","new_death":"452","death_reconsille":"","total":"","state_code":"11"}
+ 	
+,
+{"sno":"31","state_name":"Tamil Nadu","active":"286","positive":"3453447","cured":"3415136","death":"38025","new_active":"310","new_positive":"3453500","new_cured":"3415165","new_death":"38025","death_reconsille":"","total":"","state_code":"33"}
+ 	
+,
+{"sno":"32","state_name":"Telangana","active":"199","positive":"791741","cured":"787431","death":"4111","new_active":"211","new_positive":"791772","new_cured":"787450","new_death":"4111","death_reconsille":"","total":"","state_code":"36"}
+ 	
+,
+{"sno":"33","state_name":"Tripura","active":"1","positive":"100879","cured":"99956","death":"922","new_active":"1","new_positive":"100879","new_cured":"99956","new_death":"922","death_reconsille":"","total":"","state_code":"16"}
+ 	
+,
+{"sno":"34","state_name":"Uttarakhand","active":"417","positive":"437367","cured":"429257","death":"7693","new_active":"423","new_positive":"437376","new_cured":"429260","new_death":"7693","death_reconsille":"","total":"","state_code":"05"}
+ 	
+,
+{"sno":"35","state_name":"Uttar Pradesh","active":"1044","positive":"2072455","cured":"2047909","death":"23502","new_active":"1122","new_positive":"2072680","new_cured":"2048055","new_death":"23503","death_reconsille":"","total":"1","state_code":"09"}
+ 	
+,
+{"sno":"36","state_name":"West Bengal","active":"251","positive":"2017940","cured":"1996489","death":"21200","new_active":"246","new_positive":"2017971","new_cured":"1996524","new_death":"21201","death_reconsille":"","total":"1","state_code":"19"}
+ 	
+,
+{"sno":"37","state_name":"","active":"15079","positive":"43054952","cured":"42517724","death":"522149","new_active":"15873","new_positive":"43057545","new_cured":"42519479","new_death":"522193","death_reconsille":38,"total":"44","state_code":""}
+ 	
+]
