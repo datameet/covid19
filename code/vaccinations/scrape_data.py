@@ -17,7 +17,7 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-06-28-at-07-00-AM.pdf"
+FILE_NAME = "2022-06-29-at-07-00-AM.pdf"
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -82,7 +82,7 @@ def get_country_data(file_name):
     data_file = archive_folder_path + file_name
     csv_file_name = file_name +"_vaccine_country.csv"
     #print(data_file)
-    s = subprocess.call(["tabula-java","--lattice","-a", "78.413,15.683,177.863,569.543", "-p", "1", data_file ,">",csv_file_name])
+    s = subprocess.call(["tabula-java","--lattice","-a", "79.943,11.475,163.328,575.28", "-p", "1", data_file ,">",csv_file_name])
     file = open(csv_file_name)    
     csvreader = csv.reader(file)
     report_time = get_datetime(file_name)
@@ -159,7 +159,8 @@ def get_country_data(file_name):
         start = 0
     
     print("Starting at", start)
-    print("data_row", data_row)   
+    print("data_row", data_row)  
+    print("_id", data["_id"])
     data["source"] = "mohfw"
     data["type"] = "vaccinations"
     data["first_dose"] = int(data_row[start].replace(",",""))
@@ -167,9 +168,10 @@ def get_country_data(file_name):
     data["first_dose_15_18"] = int(data_row[start+2].replace(",",""))
     data["second_dose_15_18"] = int(data_row[start+3].replace(",",""))
     data["first_dose_12_14"] = int(data_row[start+4].replace(",",""))
-    data["precaution_dose_18_59"] = int(data_row[start+5].replace(",",""))
-    data["precaution_dose"] = int(data_row[start+6].replace(",",""))
-    data["total"] = int(data_row[start+7].replace(",",""))
+    data["second_dose_12_14"] = int(data_row[start+5].replace(",",""))
+    data["precaution_dose_18_59"] = int(data_row[start+6].replace(",",""))
+    data["precaution_dose"] = int(data_row[start+7].replace(",",""))
+    data["total"] = int(data_row[start+8].replace(",",""))
     return data
 
 
@@ -247,6 +249,11 @@ def parse_country_data(file_name):
 
 
 if __name__ == "__main__":
-    #parse_all_country_again()
     parse_country_data(file_name=FILE_NAME)
-    #parse_state_data(file_name="2021-02-25-at-07-00-AM.pdf")
+    #parse_all_country_again()
+
+    # for dt in range(9,10):
+    #     fname = "2022-05-0{dt}-at-07-00-AM.pdf".format(dt=dt)
+    #     parse_country_data(file_name=fname)
+
+    #parse_country_data(file_name=FILE_NAME)
