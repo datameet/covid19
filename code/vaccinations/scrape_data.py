@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 import couchdb
 import subprocess
 import csv
+from datetime import datetime
 
 covid_db_full_url = str(os.environ.get("covid_db_full_url"))
 archive_folder_path = str(os.environ.get("archive_folder_path")).format("cumulative_vaccination_coverage/") 
@@ -17,7 +18,17 @@ couchdb_db_name = "covid19"
 couch = couchdb.Server(covid_db_full_url)
 database = couch[couchdb_db_name]
 
-FILE_NAME = "2022-08-04-at-07-00-AM.pdf"
+
+def todays_file():
+        now = datetime.now()
+        print("now =", now)
+        #current_date_time = now.strftime("%d-%m-%YT%H-%M-%S")
+        datepart =  now.strftime("%Y-%m-%d") 
+        #datepart =  "2021-07-08"
+        timepart = "-at-07-00-AM.pdf"
+        current_date_time = datepart +timepart  
+        return current_date_time
+
 
 states = {}
 states["Andhra Pradesh"]="AP"
@@ -105,7 +116,9 @@ def get_country_data(file_name):
 
     data_row = None
     print(len(rows))    
-    if report_time > "2022-03-23":
+    if report_time > "2022-08-05":
+        data_row = rows[1]
+    elif report_time > "2022-03-23":
         data_row = rows[3]
     elif report_time > "2022-03-16":
         data_row = rows[3]
@@ -249,6 +262,9 @@ def parse_country_data(file_name):
 
 
 if __name__ == "__main__":
+    FILE_NAME = "2022-08-05-at-07-00-AM.pdf"
+    FILE_NAME = todays_file()
+    print(FILE_NAME)
     parse_country_data(file_name=FILE_NAME)
     #parse_all_country_again()
 
