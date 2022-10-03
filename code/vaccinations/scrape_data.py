@@ -147,7 +147,9 @@ def get_country_data(file_name):
 
 
     start = 1
-    if report_time > "2022-03-23":
+    if report_time > "2022-10-02":
+        start = 2
+    elif report_time > "2022-03-23":
         start = 1
     elif report_time > "2022-03-13":
         start = 1
