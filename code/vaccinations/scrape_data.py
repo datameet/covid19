@@ -93,7 +93,7 @@ def get_country_data(file_name):
     data_file = archive_folder_path + file_name
     csv_file_name = file_name +"_vaccine_country.csv"
     #print(data_file)
-    s = subprocess.call(["tabula-java","--lattice","-a", "79.943,11.475,163.328,575.28", "-p", "1", data_file ,">",csv_file_name])
+    s = subprocess.call(["tabula-java","--lattice","-a", "54.695,29.022,142.505,588.623", "-p", "1", data_file ,">",csv_file_name])
     file = open(csv_file_name)    
     csvreader = csv.reader(file)
     report_time = get_datetime(file_name)
@@ -116,7 +116,9 @@ def get_country_data(file_name):
 
     data_row = None
     print(len(rows))    
-    if report_time > "2022-08-05":
+    if report_time > "2022-10-02":
+        data_row = rows[3]
+    elif report_time > "2022-08-05":
         data_row = rows[1]
     elif report_time > "2022-03-23":
         data_row = rows[3]
@@ -147,9 +149,7 @@ def get_country_data(file_name):
 
 
     start = 1
-    if report_time > "2022-10-02":
-        start = 2
-    elif report_time > "2022-03-23":
+    if report_time > "2022-03-23":
         start = 1
     elif report_time > "2022-03-13":
         start = 1
@@ -264,8 +264,8 @@ def parse_country_data(file_name):
 
 
 if __name__ == "__main__":
-    FILE_NAME = "2022-08-07-at-07-00-AM.pdf"
-    FILE_NAME = todays_file()
+    FILE_NAME = "2022-10-02-at-07-00-AM.pdf"
+    #FILE_NAME = todays_file()
     print(FILE_NAME)
     parse_country_data(file_name=FILE_NAME)
     #parse_all_country_again()
