@@ -116,7 +116,7 @@ def get_country_data(file_name):
 
     data_row = None
     print(len(rows))    
-    if report_time > "2022-10-02":
+    if report_time > "2022-08-07":
         data_row = rows[3]
     elif report_time > "2022-08-05":
         data_row = rows[1]
@@ -264,14 +264,15 @@ def parse_country_data(file_name):
 
 
 if __name__ == "__main__":
-    FILE_NAME = "2022-10-02-at-07-00-AM.pdf"
-    #FILE_NAME = todays_file()
+    FILE_NAME = "2022-10-01-at-07-00-AM.pdf"
+    FILE_NAME = todays_file()
     print(FILE_NAME)
     parse_country_data(file_name=FILE_NAME)
     #parse_all_country_again()
 
-    # for dt in range(9,10):
-    #     fname = "2022-05-0{dt}-at-07-00-AM.pdf".format(dt=dt)
+    # for dt in range(30,31):
+    #     fname = "2022-09-{dt}-at-07-00-AM.pdf".format(dt=dt)
+    #     print(fname)
     #     parse_country_data(file_name=fname)
 
     #parse_country_data(file_name=FILE_NAME)
