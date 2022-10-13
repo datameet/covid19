@@ -264,7 +264,7 @@ def parse_country_data(file_name):
 
 
 if __name__ == "__main__":
-    #FILE_NAME = "2022-10-10-at-07-00-AM.pdf"
+    #FILE_NAME = "2022-10-12-at-07-00-AM.pdf"
     FILE_NAME = todays_file()
     print(FILE_NAME)
     parse_country_data(file_name=FILE_NAME)
