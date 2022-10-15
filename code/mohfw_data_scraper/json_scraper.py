@@ -224,6 +224,6 @@ def load_file_now(file_name, file_date_time):
 
 
 if __name__ == "__main__":
-	#load_file_now("2022-02-16T08:00:00.00+05:30_md5_0400028761f56e4ec6aab99996fe0f2a.json", "2022-02-16T08:00:00.00+05:30")
+	#load_file_now("2022-10-15T08:00:00.00+05:30_md5_6b108115b365fea752108122e6396543.json", "2022-10-15T08:00:00.00+05:30")
 	scrape_data_now()
 	#reload_a_day_backup("2020-07-28.json")
